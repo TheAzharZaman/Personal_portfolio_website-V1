@@ -1,14 +1,20 @@
 import React from "react";
-import Header from "./Components/Header";
-import Homepage from "./Pages/Homepage";
+import HomePage from "./Pages/HomePage";
+import Pricing from "./Pages/Pricing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="App__main__container">
       <Router>
-        <Homepage />
+        <Switch>
+          <Route path="/pricing">
+            <Pricing />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+@mixin flex($content, $direction) {
+  display: flex;
+  justify-content: $content;
+  flex-direction: $direction;
+  align-items: center;
+}
+
+// body {
+//   overflow: hidden;
+// }
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  object-fit: contain;
+}
+
+a {
+  cursor: pointer;
+}

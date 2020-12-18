@@ -4,13 +4,8 @@ import App from "./App";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
-let RootDirectory = document.getElementById("root");
+let RootDirectory = document.getElementById("Root");
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  RootDirectory
-);
+ReactDOM.render(<App />, RootDirectory);
 
 serviceWorker.register();
