@@ -7,6 +7,7 @@ import BigCardProjectTemplate from "./BigCardProjectTemplate";
 import PendingProject from "./PendingProject";
 import GoogleLogo from "./images/googleLogo.png";
 import AmazonLogo from "./images/amazon.png";
+import BDLogo from "./images/bdlogo.png";
 import NetflixLogo from "./images/netflix.png";
 import MyLogo from "./images/logo.png";
 import TrackerLogo from "./images/tracker_logo.png";
@@ -193,11 +194,22 @@ let ProjectsSection = () => {
             needExternalLink
           />
         </div>
-        <PendingProject
-          logoSrc={AmazonLogo}
-          githubLink="https://github.com/TheAzharZaman/Amazon-Clone_portfolio.git"
-          liveLink="https://azhar-amazonclone.ga/"
-        />
+        <div className="reactProjects__secondRow">
+          <PendingProject
+            tagline="Working on Amazon Clone"
+            logoSrc={AmazonLogo}
+            githubLink="https://github.com/TheAzharZaman/Full-Stack-Amazon-Clone.git"
+            liveLink="https://azhar-amazonclone.ga/"
+          />
+          <PendingProject
+            tagline="Blood Donation Marketplace"
+            logoSrc={BDLogo}
+            pendingProjectLogoClass="pendingProject__bdLogo"
+            githubLink="https://github.com/TheAzharZaman/Blood_Donation_Application.git"
+            liveLink="https://azhar-blooddonation.netlify.app/"
+          />
+        </div>
+
         <div className="reactProjects__secondRow">
           <BigCardProjectTemplate
             reactProjectSpecialClass="covid__projectContainer"

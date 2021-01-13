@@ -3,7 +3,13 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-const PendingProject = ({ logoSrc, githubLink, liveLink }) => {
+const PendingProject = ({
+  logoSrc,
+  githubLink,
+  liveLink,
+  tagline,
+  pendingProjectLogoClass,
+}) => {
   return (
     <div
       data-aos="fade-up"
@@ -13,10 +19,10 @@ const PendingProject = ({ logoSrc, githubLink, liveLink }) => {
       className="pendingProject"
     >
       <a href={liveLink} target="_blank">
-        <img src={logoSrc} />
+        <img className={pendingProjectLogoClass} src={logoSrc} />
       </a>
-      <h2>Working on Amazon Clone</h2>
-      <h3>View Progress</h3>
+      <h2>{tagline}</h2>
+      <h3>Track Progress</h3>
       <div className="pendingProjects__linksIcons">
         <a href={githubLink} target="_blank">
           <FontAwesomeIcon

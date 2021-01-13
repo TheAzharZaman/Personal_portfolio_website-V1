@@ -1,5 +1,5 @@
 import React from "react";
-import HomePage from "./Pages/HomePage";
+import HomePage from "./Pages/Homepage";
 import Pricing from "./Pages/Pricing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

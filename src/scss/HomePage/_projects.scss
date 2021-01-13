@@ -65,6 +65,14 @@
   justify-content: space-evenly;
 }
 
+.reactProjects__pendingRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 6.55rem;
+}
+
 .reactProjects__secondRow {
   display: flex;
   flex-direction: row;
@@ -175,7 +183,7 @@
 
 .pendingProject {
   align-items: center;
-  width: 500px;
+  width: 430px;
   height: 200px;
   background-color: #273375;
   display: flex;
@@ -183,7 +191,6 @@
   border: 1px solid rgb(66, 66, 66);
   position: relative;
   top: 7px;
-  margin: 7rem auto 0;
   padding: 1rem;
 
   &:hover {
@@ -196,12 +203,22 @@
   margin-top: 1.35rem;
 }
 
+.pendingProject__bdLogo {
+  margin-top: 0.65rem !important;
+  width: 60px !important;
+}
+
 .pendingProject > h2 {
-  font-size: 24px;
+  font-size: 21.5px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: $dim-white;
   margin-top: 1.5rem;
+}
+
+.pendingProject:nth-child(2) > h2 {
+  font-size: 20px;
+  margin-top: 0.75rem;
 }
 
 .pendingProject > h3 {
@@ -210,6 +227,17 @@
   font-weight: 400;
   color: $dim-white;
   margin-top: 2.5rem;
+}
+
+.pendingProject:nth-child(2) > h3 {
+  font-size: 16.5px;
+  margin-top: 1.75rem;
+}
+
+.pendingProjects__linksIcons {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
 }
 
 .pendingProjects__linksIcons > a > svg {
