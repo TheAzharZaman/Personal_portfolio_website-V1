@@ -36,7 +36,7 @@ const BigCardProjectTemplate = ({
       className={`bigProject__wrapper ${reactProjectSpecialClass}`}
     >
       <div className="bigProject__cardHeader">
-        <a href={projectOriginal__srcLink} target="_blank">
+        <a>
           <img
             className={reactProjectLogoClass}
             src={reactProjectLogoSrc}

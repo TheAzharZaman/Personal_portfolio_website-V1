@@ -159,16 +159,65 @@ let ProjectsSection = () => {
         >
           Front-End-Development (React)
         </h2>
+
+        <div className="reactProjects__secondRow">
+          {/* <PendingProject
+            tagline="Working on Amazon Clone"
+            logoSrc={AmazonLogo}
+            githubLink=""
+            liveLink=""
+          /> */}
+          <PendingProject
+            tagline="Blood Donation Marketplace"
+            logoSrc={BDLogo}
+            pendingProjectLogoClass="pendingProject__bdLogo"
+            githubLink="https://github.com/TheAzharZaman/Blood_Donation_Application.git"
+            liveLink="https://azhar-blooddonation.netlify.app/"
+          />
+        </div>
+
         <div className="reactProjects__firstRow">
+          <BigCardProjectTemplate
+            reactProjectSpecialClass="covid__projectContainer"
+            reactProjectLogoSrc={TrackerLogo}
+            reactProjectLogoClass="covidLogo"
+            project__githubLink="https://github.com/TheAzharZaman/Covid-tacker-portfolio"
+            projectLink="https://azhar-covidtracker.ga/"
+            projectDescription="Built a fully functional COVID-19 Tracker with React using latest web  technologies like Material UI, React leaflet, ChartJs as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
+            tech1="ReactJs"
+            tech2="Material UI"
+            tech3="Leaflet"
+            tech4="ChartJs"
+            needExternalLink
+            gitHubIconSpecialClass="covidProject__github"
+          />
+
+          <BigCardProjectTemplate
+            reactProjectSpecialClass="covid__projectContainer"
+            reactProjectLogoSrc={AmazonLogo}
+            reactProjectLogoClass="amazonLogo"
+            project__githubLink="https://github.com/TheAzharZaman/Full-Stack-Amazon-Clone.git"
+            projectLink="https://azhar-amazonclone.ga/"
+            projectDescription="I have recently completed Amazon Demo Clone build with React, with full eCommerce functionalities like add & remove to Cart, add address, Checkout Payment via Stripe, add products, add categories and much more. This Amazon clone is using Firebase firestore as realtime Database to store user details, addresses, order stats etc."
+            tech1="ReactJs"
+            tech2="Stripe"
+            tech3="Material UI"
+            tech4="Firebase"
+            needExternalLink
+            needCloneText
+            logoRightText="Clone"
+          />
+        </div>
+
+        <div className="reactProjects__secondRow">
           <BigCardProjectTemplate
             reactProjectSpecialClass="googleClone__projectContainer"
             reactProjectLogoSrc={GoogleLogo}
-            projectOriginal__srcLink="https://azhar-googleclone.ga/"
             reactProjectLogoClass="googleLogo"
             logoRightText="Clone"
             project__githubLink="https://github.com/TheAzharZaman/Google-portfolio-clone.git"
             projectLink="https://azhar-googleclone.ga/"
-            projectDescription="Built a fully functional Google Clone on React finding its real-time database from the original Google server. This clone is full of functinalites including React Router,React Hooks with a custom Hook as well. Material UI is serving as a design library. This clone is super responsive fit for use on every device size. "
+            projectDescription="Built a fully functional Google Clone with React finding its real-time database from the original Google server. This clone is full of functinalites including React Router, React Hooks and React Context API. Material UI is serving as a design library. This clone is super responsive fit for every device size."
             tech1="ReactJs"
             tech2="Material UI"
             tech3="JavaScript"
@@ -179,7 +228,6 @@ let ProjectsSection = () => {
           <BigCardProjectTemplate
             reactProjectSpecialClass="netflixClone__projectContainer"
             reactProjectLogoSrc={NetflixLogo}
-            projectOriginal__srcLink="https://azhar-netflixclone.ga/"
             reactProjectLogoClass="netflixLogo"
             logoRightText="Clone"
             project__githubLink="https://github.com/TheAzharZaman/Netflix-Portfolio-Clone.git"
@@ -195,44 +243,12 @@ let ProjectsSection = () => {
           />
         </div>
         <div className="reactProjects__secondRow">
-          <PendingProject
-            tagline="Working on Amazon Clone"
-            logoSrc={AmazonLogo}
-            githubLink="https://github.com/TheAzharZaman/Full-Stack-Amazon-Clone.git"
-            liveLink="https://azhar-amazonclone.ga/"
-          />
-          <PendingProject
-            tagline="Blood Donation Marketplace"
-            logoSrc={BDLogo}
-            pendingProjectLogoClass="pendingProject__bdLogo"
-            githubLink="https://github.com/TheAzharZaman/Blood_Donation_Application.git"
-            liveLink="https://azhar-blooddonation.netlify.app/"
-          />
-        </div>
-
-        <div className="reactProjects__secondRow">
-          <BigCardProjectTemplate
-            reactProjectSpecialClass="covid__projectContainer"
-            reactProjectLogoSrc={TrackerLogo}
-            projectOriginal__srcLink="https://azhar-covidtracker.ga/"
-            reactProjectLogoClass="covidLogo"
-            project__githubLink="https://github.com/TheAzharZaman/Covid-tacker-portfolio"
-            projectLink="https://azhar-covidtracker.ga/"
-            projectDescription="Built a Fully functional COVID-19 Tracker with React using some latest technologies like Material UI, React leaflet, Charts as main UI components. This specific Covid tracker finds its realtime database from 'disease.sh' using Live API calls. Also it uses Firebase as a database and Authentication functionalities."
-            tech1="ReactJs"
-            tech2="Material UI"
-            tech3="Leaflet"
-            tech4="ChartJs"
-            needExternalLink
-            gitHubIconSpecialClass="covidProject__github"
-          />
-
           <BigCardProjectTemplate
             reactProjectSpecialClass="persoanl__projectContainer"
             reactProjectLogoSrc={MyLogo}
             reactProjectLogoClass="myLogo"
             project__githubLink="https://github.com/drcraze/Personal-Website-V1.git"
-            projectDescription="This website is built with React with its descent UI. Making this website simple but expressive was my first priority. There is always room for improvement and your contribution would be a great favour."
+            projectDescription="This website is built with React with its descent UI. I have used CSS(SASS) for styling purposes. Making this website simple but expressive was my first priority. There is always room for improvement. Your contribution would be a great favour, if you want to. Link to Github Repo is attached."
             tech1="ReactJs"
             tech2="CSS(SASS)"
             tech3="JavaScript"

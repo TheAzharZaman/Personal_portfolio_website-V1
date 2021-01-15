@@ -18,11 +18,11 @@ const PendingProject = ({
       data-aos-easing="ease-out"
       className="pendingProject"
     >
-      <a href={liveLink} target="_blank">
+      <a>
         <img className={pendingProjectLogoClass} src={logoSrc} />
       </a>
       <h2>{tagline}</h2>
-      <h3>Track Progress</h3>
+      <h3>Track Build Progress</h3>
       <div className="pendingProjects__linksIcons">
         <a href={githubLink} target="_blank">
           <FontAwesomeIcon

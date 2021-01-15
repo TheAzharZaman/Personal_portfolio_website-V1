@@ -946,19 +946,21 @@ body {
 
 .Slider__close__icon {
   position: absolute;
-  right: 1.3rem;
+  left: 1.12rem;
   top: 0.85rem;
-  font-size: 30px;
-  color: #ec4884;
-  -webkit-transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
-  transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
-  transition: transform 0.2s, box-shadow 0.2s;
-  transition: transform 0.2s, box-shadow 0.2s, -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
+  color: white;
+  font-size: 30px !important;
+  -webkit-transition: color 0.12s, -webkit-transform 0.2s, -webkit-box-shadow 0.2s !important;
+  transition: color 0.12s, -webkit-transform 0.2s, -webkit-box-shadow 0.2s !important;
+  transition: color 0.12s, transform 0.2s, box-shadow 0.2s !important;
+  transition: color 0.12s, transform 0.2s, box-shadow 0.2s, -webkit-transform 0.2s, -webkit-box-shadow 0.2s !important;
+  cursor: pointer !important;
 }
 
 .Slider__close__icon:hover {
-  -webkit-transform: scale(1.075);
-          transform: scale(1.075);
+  color: #b16262 !important;
+  border-right: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
   -webkit-box-shadow: 1px 1px 5px -1px rgba(90, 90, 90, 0.3);
           box-shadow: 1px 1px 5px -1px rgba(90, 90, 90, 0.3);
 }
@@ -1029,6 +1031,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-top: 6.55rem;
 }
 
 .reactProjects__pendingRow {
@@ -1045,7 +1048,6 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 6.55rem;
 }
 
 .reactProjects__secondRow {
@@ -1121,6 +1123,11 @@ body {
 
 .bigProject__cardHeader .covidLogo {
   width: 160px;
+}
+
+.bigProject__cardHeader .amazonLogo {
+  width: 130px;
+  margin: 2.1rem 1.25rem 0 1.75rem;
 }
 
 .bigProject__cardHeader h2 {
@@ -1219,11 +1226,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #b6b4b4;
-  margin-top: 1.5rem;
-}
-
-.pendingProject:nth-child(2) > h2 {
-  font-size: 20px;
   margin-top: 0.75rem;
 }
 
@@ -1232,11 +1234,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #b6b4b4;
-  margin-top: 2.5rem;
-}
-
-.pendingProject:nth-child(2) > h3 {
-  font-size: 16.5px;
   margin-top: 1.75rem;
 }
 
@@ -1595,7 +1592,7 @@ body {
 
 .contactBtns {
   border: 0.1px solid #ec4884;
-  padding: 1.37rem 2.4rem;
+  padding: 1.2rem 2.2rem;
   border-radius: 3px;
   outline: none;
   -webkit-transition: background-color 0.25s;
@@ -2077,6 +2074,18 @@ body {
     font-size: 19px;
     margin: 0 0 0rem;
   }
+  .reactProjects__pendingRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .reactProjects__firstRow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2095,14 +2104,15 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 3.5rem;
-    margin-left: -0.1rem;
-    margin-right: 1.1rem;
   }
   .bigProject__wrapper {
-    width: 96%;
+    width: 94%;
     height: 98%;
     border-radius: 4px;
     margin-top: 4rem;
+  }
+  .bigProject__wrapper:nth-child(1) {
+    margin-top: 0rem;
   }
   .bigProject__cardHeader {
     max-width: 100%;
@@ -2150,6 +2160,44 @@ body {
   }
   .bigProject__cardFooter p:first-child {
     margin: 0;
+  }
+  .pendingProject {
+    width: 92%;
+    height: 182.5px;
+    padding: 1rem;
+    margin: 4rem auto 0;
+  }
+  .pendingProject:nth-child(1) {
+    margin-top: 0;
+    height: 182.5px;
+  }
+  .pendingProject > a > img {
+    width: 95px;
+    margin-top: 1.35rem;
+  }
+  .pendingProject__bdLogo {
+    margin-top: 0.65rem !important;
+    width: 57px !important;
+  }
+  .pendingProject > h2 {
+    font-size: 17.5px;
+  }
+  .pendingProject:nth-child(2) > h2 {
+    font-size: 17px;
+  }
+  .pendingProject > h3 {
+    font-size: 15.5px;
+    margin-top: 2.5rem;
+  }
+  .pendingProject:nth-child(2) > h3 {
+    font-size: 15.5px;
+    margin-top: 1.75rem;
+  }
+  .pendingProjects__linksIcons > a > .pendingProject__githubIcon {
+    font-size: 20px;
+  }
+  .pendingProjects__linksIcons > a > .pendingProject__externalIcon {
+    font-size: 18.5px;
   }
   .cmsDevelopment__projectsContainer {
     margin-top: 6rem;
@@ -2545,6 +2593,18 @@ body {
     font-size: 19px;
     margin: 0 0 0rem;
   }
+  .reactProjects__pendingRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .reactProjects__firstRow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2563,14 +2623,15 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 3.5rem;
-    margin-left: -0.1rem;
-    margin-right: 1.1rem;
   }
   .bigProject__wrapper {
     width: 96%;
     height: 98%;
     border-radius: 4px;
     margin-top: 4rem;
+  }
+  .bigProject__wrapper:nth-child(1) {
+    margin-top: 0;
   }
   .bigProject__cardHeader {
     max-width: 100%;
@@ -2619,6 +2680,56 @@ body {
   }
   .bigProject__cardFooter p:first-child {
     margin: 0;
+  }
+  .reactProjects__pendingRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pendingProject {
+    width: 94%;
+    height: 182.5px;
+    padding: 1rem;
+    margin: 4rem auto 0;
+  }
+  .pendingProject:nth-child(1) {
+    margin-top: 0;
+    height: 182.5px;
+  }
+  .pendingProject > a > img {
+    width: 95px;
+    margin-top: 1.35rem;
+  }
+  .pendingProject__bdLogo {
+    margin-top: 0.65rem !important;
+    width: 57px !important;
+  }
+  .pendingProject > h2 {
+    font-size: 17.5px;
+  }
+  .pendingProject:nth-child(2) > h2 {
+    font-size: 17px;
+  }
+  .pendingProject > h3 {
+    font-size: 15.5px;
+    margin-top: 2.5rem;
+  }
+  .pendingProject:nth-child(2) > h3 {
+    font-size: 15.5px;
+    margin-top: 1.75rem;
+  }
+  .pendingProjects__linksIcons > a > .pendingProject__githubIcon {
+    font-size: 20px;
+  }
+  .pendingProjects__linksIcons > a > .pendingProject__externalIcon {
+    font-size: 18.5px;
   }
   .cmsDevelopment__projectsContainer {
     margin-top: 6rem;
@@ -3019,6 +3130,18 @@ body {
     font-size: 19px;
     margin: 0 0 0rem;
   }
+  .reactProjects__pendingRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .reactProjects__firstRow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3037,14 +3160,15 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 3.5rem;
-    margin-left: -0.1rem;
-    margin-right: 2.6rem;
   }
   .bigProject__wrapper {
     width: 96%;
     height: 98%;
     border-radius: 4px;
     margin-top: 4rem;
+  }
+  .bigProject__wrapper:nth-child(1) {
+    margin-top: 0rem;
   }
   .bigProject__cardHeader {
     max-width: 100%;
@@ -3093,6 +3217,44 @@ body {
   }
   .bigProject__cardFooter p:first-child {
     margin: 0;
+  }
+  .pendingProject {
+    width: 94%;
+    height: 182.5px;
+    padding: 1rem;
+    margin: 4rem auto 0;
+  }
+  .pendingProject:nth-child(1) {
+    margin-top: 0;
+    height: 182.5px;
+  }
+  .pendingProject > a > img {
+    width: 95px;
+    margin-top: 1.35rem;
+  }
+  .pendingProject__bdLogo {
+    margin-top: 0.65rem !important;
+    width: 57px !important;
+  }
+  .pendingProject > h2 {
+    font-size: 17.5px;
+  }
+  .pendingProject:nth-child(2) > h2 {
+    font-size: 17px;
+  }
+  .pendingProject > h3 {
+    font-size: 15.5px;
+    margin-top: 2.5rem;
+  }
+  .pendingProject:nth-child(2) > h3 {
+    font-size: 15.5px;
+    margin-top: 1.75rem;
+  }
+  .pendingProjects__linksIcons > a > .pendingProject__githubIcon {
+    font-size: 20px;
+  }
+  .pendingProjects__linksIcons > a > .pendingProject__externalIcon {
+    font-size: 18.5px;
   }
   .cmsDevelopment__projectsContainer {
     margin-top: 6rem;

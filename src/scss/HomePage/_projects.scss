@@ -63,6 +63,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 6.55rem;
 }
 
 .reactProjects__pendingRow {
@@ -70,7 +71,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 6.55rem;
 }
 
 .reactProjects__secondRow {
@@ -118,6 +118,11 @@
 
   .covidLogo {
     width: 160px;
+  }
+
+  .amazonLogo {
+    width: 130px;
+    margin: 2.1rem 1.25rem 0 1.75rem;
   }
 
   h2 {
@@ -213,26 +218,26 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: $dim-white;
-  margin-top: 1.5rem;
-}
-
-.pendingProject:nth-child(2) > h2 {
-  font-size: 20px;
   margin-top: 0.75rem;
 }
+
+// .pendingProject:nth-child(2) > h2 {
+//   font-size: 20px;
+//   margin-top: 0.75rem;
+// }
 
 .pendingProject > h3 {
   font-size: 16.5px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: $dim-white;
-  margin-top: 2.5rem;
-}
-
-.pendingProject:nth-child(2) > h3 {
-  font-size: 16.5px;
   margin-top: 1.75rem;
 }
+
+// .pendingProject:nth-child(2) > h3 {
+//   font-size: 16.5px;
+//   margin-top: 1.75rem;
+// }
 
 .pendingProjects__linksIcons {
   display: flex;

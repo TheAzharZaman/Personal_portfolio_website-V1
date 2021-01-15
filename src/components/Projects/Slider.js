@@ -1,6 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
+import { Close } from "@material-ui/icons";
 
 const Slider = ({
   image_special_id,
@@ -16,11 +17,7 @@ const Slider = ({
         src={image_src}
         alt={image_alt}
       />
-      <FontAwesomeIcon
-        className="Slider__close__icon"
-        id="Slider__close__icon"
-        icon={faWindowClose}
-      />
+      <Close className="Slider__close__icon" id="Slider__close__icon" />
     </div>
   );
 };

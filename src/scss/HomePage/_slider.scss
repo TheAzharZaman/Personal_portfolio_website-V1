@@ -34,14 +34,17 @@
 
 .Slider__close__icon {
   position: absolute;
-  right: 1.3rem;
+  left: 1.12rem;
   top: 0.85rem;
-  font-size: 30px;
-  color: $pink;
-  transition: transform 0.2s, box-shadow 0.2s;
+  color: white;
+  font-size: 30px !important;
+  transition: color 0.12s, transform 0.2s, box-shadow 0.2s !important;
+  cursor: pointer !important;
 
   &:hover {
-    transform: scale(1.075);
+    color: rgb(177, 98, 98) !important;
+    border-right: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
     box-shadow: 1px 1px 5px -1px rgba(90, 90, 90, 0.3);
   }
 }

@@ -8,11 +8,11 @@ const App = () => {
     <div className="App__main__container">
       <Router>
         <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
           <Route path="/pricing">
             <Pricing />
-          </Route>
-          <Route path="/">
-            <HomePage />
           </Route>
         </Switch>
       </Router>
