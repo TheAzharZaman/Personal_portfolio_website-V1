@@ -24,7 +24,7 @@ function App() {
     });
 
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", () => {});
     };
   }, []);
 

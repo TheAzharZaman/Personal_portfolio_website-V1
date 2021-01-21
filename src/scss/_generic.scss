@@ -3,7 +3,7 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  user-select: none;
+  // user-select: none;
 }
 
 @mixin flex($content, $direction) {
@@ -12,10 +12,6 @@
   flex-direction: $direction;
   align-items: center;
 }
-
-// body {
-//   overflow: hidden;
-// }
 
 html {
   font-size: 62.5%;

@@ -1,42 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Logo from "./logo.png";
 import { Link } from "react-scroll";
+import CoachingPrivateLink from "./CoachingPrivateLink";
 
 function HeaderSection() {
-  // const [show, setShow] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if (window.scrollY > 600) {
-  //       setShow(true);
-  //       widthAdjuster();
-  //     } else {
-  //       setShow(false);
-  //     }
-
-  //     return () => {
-  //       window.removeEventListener("scroll");
-  //     };
-  //   });
-
-  //   function widthAdjuster() {
-  //     let headerLogo = document.getElementById("Logo");
-  //     let navUL = document.getElementById("header__UL");
-  //     let navButton = document.getElementById("navBtn");
-
-  //     headerLogo.classList.replace("Logo", "Nav__logo__onScroll");
-  //     navButton.classList.add("Nav__button__onScroll");
-  //     navUL.classList.add("Nav__ul__onScroll");
-
-  //     console.log(headerLogo.classList);
-  //     console.log(navButton.classList);
-  //     console.log(navUL.classList);
-  //   }
-  // }, []);
-
   return (
     <div className={`Header-wrapper`}>
-      {/* ${show && "headerWrapper__onScroll"}` */}
       <div className="Logo-section">
         <a href="https://azharzaman.com">
           <img className="Logo" id="Logo" src={Logo} alt="logo"></img>
@@ -93,6 +62,7 @@ function HeaderSection() {
               <span>04-</span> Contact
             </Link>
           </li>
+          <CoachingPrivateLink />
         </ul>
       </div>
       <div className="Nav-button-section">
