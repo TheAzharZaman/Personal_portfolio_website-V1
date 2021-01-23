@@ -1,4 +1,4 @@
-# Personal_portfolio_website-V1
+# Personal Portfolio Website V1
 
 ## Technologies Used:
 1) JavaScript(ES6) HTML5/CSS3(SASS)
