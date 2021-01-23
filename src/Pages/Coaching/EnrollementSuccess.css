@@ -34,3 +34,8 @@
   font-family: "Roboto", sans-serif;
   color: rgb(47, 121, 218);
 }
+
+.orderPlaced__card > a:hover {
+  text-decoration: underline;
+  color: rgb(35, 111, 211);
+}

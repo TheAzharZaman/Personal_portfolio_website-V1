@@ -32,14 +32,7 @@
 }
 
 .student__profile:hover {
-  /* border-top: 1px solid lightblue; */
   background-color: rgb(225, 231, 226);
-  transform: scale(1.025);
-  box-shadow: 1px 3.5px 5px 0 rgba(0, 0, 0, 0.25);
-}
-
-.student__profile:last-child {
-  border-bottom: 0px solid rgb(255, 255, 255);
 }
 
 .student__profile > h1,
@@ -100,7 +93,6 @@
 
 .notice {
   margin-top: 1.5rem;
-  color: rgb(216, 216, 216);
 }
 
 .notice > h3 {
@@ -108,4 +100,25 @@
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+  color: rgb(216, 216, 216);
+}
+
+.enrolledStudents__backLink {
+  margin-top: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.enrolledStudents__backLink > a {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(216, 216, 216);
+  margin: auto;
+  /* transition: all 0.15s; */
+}
+
+.enrolledStudents__backLink > a:hover {
+  text-decoration: underline;
+  color: rgb(204, 204, 204);
 }

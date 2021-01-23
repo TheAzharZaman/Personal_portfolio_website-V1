@@ -28,14 +28,16 @@ const CoachingOverview = () => {
           <small>(pick what suits you)</small>
         </p>
         <p className="overview">
-          I have decided to teach Pakistani youth <small>(like me)</small>, to
-          Provide the most technical skill on this planet right now. Its no
-          doubt that, businesses in Eastern parts of world will be shifted
-          online in no period. So if you want to have ability to take this as an
-          opprtunity and earn money from this trend continously upgoing, thats
-          why you might be here. I as a programmer can judge, this trend is not
-          going downward atleast for next 30 years. If you are with me, we will
-          be providing oppurtunties to local businesses to shift online.
+          I am expert Front-end-developer, and if you want to be so, I can help
+          you in that. Its no doubt that, businesses in Eastern parts of world
+          will be shifted online in no period. So if you want to have ability to
+          take this as an opprtunity and earn money from this trend continously
+          upgoing, you just have to stick with me for next 3Months. I as a
+          programmer can judge, this trend is not going downward atleast for
+          next 30 years. I as a programmer can teach how to build next-level
+          static websites(like mine), or fully-functional web aplications like
+          Netflix, Web tools. If you are with me, we will be providing
+          oppurtunties to local businesses to shift online.
         </p>
         <p className="overview">
           I can help you become an expert{" "}
@@ -50,7 +52,6 @@ const CoachingOverview = () => {
           through these details and click 'Interested' at the bottom. Otherwise
           sorry for this disturbance, and your time.
         </p>
-
         <div className="course__outcomes">
           <h1 className="feild__heading">
             Course Roadmap:{" "}
@@ -64,15 +65,16 @@ const CoachingOverview = () => {
           </h2>
 
           <ul className="feild__points">
-            <FieldPoint2 feildPoint="HTML5" />
-            <FieldPoint2 feildPoint="CSS2/3 with Preprocessors like Sass/Less" />
-            <FieldPoint2 feildPoint="JavaScript" />
-            <FieldPoint2 feildPoint="Create Basic Programmes with JavaScript" />
+            <FieldPoint2 feildPoint="HTML5 / CSS2/3 with Preprocessors like Sass" />
+            <FieldPoint2 feildPoint="JavaScript(ES6+) | Create Basic Applications with JavaScript" />
             <FieldPoint2 feildPoint="JavaScript Frameworks Overview" />
             <FieldPoint2 feildPoint="Complete JavaScript Library ReactJs" />
             <FieldPoint2 feildPoint="Core/Advance concepts of ReactJs" />
+            <FieldPoint2 feildPoint="Design Libraries like Material UI" />
             <FieldPoint2 feildPoint="Creating PWA with ReactJs" />
+            <FieldPoint2 feildPoint="Git/Github(Version Control Systems)" />
             <FieldPoint2 feildPoint="Everything about Front-End-Development" />
+            <FieldPoint2 feildPoint="Also Google Firebase(powerful back-end alternative)" />
           </ul>
         </div>
         <div className="course__outcomes">
@@ -88,13 +90,14 @@ const CoachingOverview = () => {
           </h2>
 
           <ul className="feild__points">
-            <FieldPoint feildPoint="By the end of this bootcamp you will be able to build website like my website" />
-            <FieldPoint feildPoint="You would be in a position to freelance or move even deeper to get full-time job." />
+            <FieldPoint feildPoint="By the end of this bootcamp you will be able to build any kind of static website" />
+            <FieldPoint feildPoint="You would be in a position to freelance or move even deeper to get full-time development job." />
             <FieldPoint feildPoint="Atleast you will be able to start teaching as part-time, get more knowledge, get more exposure, get more skills, and at the end you would be even better developer" />
-            <FieldPoint feildPoint="After the end of this bootcamp, after some practice you will be able to clone or create any kind of static website." />
+            {/* <FieldPoint feildPoint="After the end of this bootcamp, after some practice you will be able to clone or create any kind of static website." /> */}
             <FieldPoint feildPoint="After some more pratice of fundamentals I taught you, you would be able to clone basic functionalities of any web appllications, like I did (see my portfolio)." />
-            <FieldPoint feildPoint="You would be able to start your own Project." />
-            <FieldPoint feildPoint="After some more practice and adding more dynamicity, you might be doing a job for $3-7k/Month" />
+            <FieldPoint feildPoint="You would be in position start your own Project." />
+            <FieldPoint feildPoint="After some more practice and adding more dynamicity, you might be doing a job for $3-7k/Month for international company." />
+            <FieldPoint feildPoint="The outcomes at the end would be dependent on efforts you putted in this CodeCamp." />
           </ul>
         </div>
         <div className="course__outcomes">
@@ -119,7 +122,6 @@ const CoachingOverview = () => {
             <FieldPoint2 feildPoint="+ Your suggestions will be considered if majority aggreed" />
           </ul>
         </div>
-
         <div className="course__outcomes">
           <h1 className="feild__heading">
             Fee Structure:{" "}
@@ -185,6 +187,9 @@ const CoachingOverview = () => {
             <FieldPoint feildPoint="And must have requirement atleast one Heart, if are thinking to learn code without giving it heart, you are on wrong track. Believe me once you started understanding it, you will be called 'coding addict'" />
           </ul>
         </div>
+        <h3 className="suggestions">
+          If you have some suggestion, I would be glad to hear!
+        </h3>
         <h1 className="thatsIt">Thats it, See you in class</h1>
       </div>
 

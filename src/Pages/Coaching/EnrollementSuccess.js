@@ -16,6 +16,9 @@ const EnrollementSuccess = () => {
             See All Enrolled Students
           </Link>
         </Card>
+        <div className="enrolledStudents__backLink">
+          <Link to="/">Back to home</Link>
+        </div>
       </div>
     </div>
   );

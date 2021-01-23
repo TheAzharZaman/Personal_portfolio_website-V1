@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { db } from "../../Files/firebase";
 import "./EnrolledStudents.css";
 
@@ -46,6 +47,9 @@ const EnrolledStudents = () => {
           If your details not correct, ot your profile is not list please report
           at azharzaman.001@gmail.com
         </h3>
+      </div>
+      <div className="enrolledStudents__backLink">
+        <Link to="/">Back to home</Link>
       </div>
     </div>
   );
