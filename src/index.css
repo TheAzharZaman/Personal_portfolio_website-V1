@@ -1,2 +1,7 @@
 @import "./myImageCSS.css";
 @import "./main.css";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

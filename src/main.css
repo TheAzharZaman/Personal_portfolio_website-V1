@@ -4036,6 +4036,8 @@ body {
 
 body {
   width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Pointer {
@@ -4077,5 +4079,14 @@ body {
   100% {
     top: 0;
   }
+}
+
+.Main_app_ui_container {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.hide__scrollbar::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

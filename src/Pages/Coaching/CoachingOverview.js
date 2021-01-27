@@ -133,39 +133,39 @@ const CoachingOverview = () => {
             This is something where Pakistanis don't touch something, but don't
             worry fee is negligible. First of all let me mention, average fee
             for Programming bootcamps in Pakistan and India is 10000/Month. You
-            can confirm from any where. Here is what you would pay me, accept
-            you are not in position to pay:
+            can confirm from any where. Here is what you would pay me, if you
+            have suggestion, please let me know:
           </h2>
 
           <ul className="feild__points feild__pointsSpec">
-            <FieldPoint feildPoint="First 3 Days (free trial)" />
+            <FieldPoint feildPoint="First Day (free trial)" />
             <FieldPoint feildPoint="First Month (PKR 500 total) " />
-            <FieldPoint2
+            {/* <FieldPoint2
               isSubPoint
               feildPoint="First month > First installment: PKR 250 (Month Start)"
             />
             <FieldPoint2
               isSubPoint
               feildPoint="First month > Second installment: PKR 250 (Month End)"
-            />
+            /> */}
             <FieldPoint feildPoint="Second Month (PKR 1000 total) " />
-            <FieldPoint2
+            {/* <FieldPoint2
               isSubPoint
               feildPoint="Second month > First installment: PKR 500 (Month Mid)"
             />
             <FieldPoint2
               isSubPoint
               feildPoint="Second month > Second installment: PKR 500 (Month End)"
-            />
+            /> */}
             <FieldPoint feildPoint="Third Month (PKR 1500 total) " />
-            <FieldPoint2
+            {/* <FieldPoint2
               isSubPoint
               feildPoint="Third month > First installment: PKR 1000 (Month Mid)"
             />
             <FieldPoint2
               isSubPoint
               feildPoint="Third month > Second installment: PKR 500 (Month End)"
-            />
+            /> */}
           </ul>
           <h3 className="total">Total: 3000 (avg. 1000/Month)</h3>
         </div>
