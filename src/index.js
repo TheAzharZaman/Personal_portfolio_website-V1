@@ -8,4 +8,4 @@ let RootDirectory = document.getElementById("Root");
 
 ReactDOM.render(<App />, RootDirectory);
 
-serviceWorker.register();
+serviceWorker.unregister();

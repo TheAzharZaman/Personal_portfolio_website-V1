@@ -35,7 +35,7 @@ function AboutComponent() {
 
           <h1 className="speciality anim anim-3 ecommerce-spe">
             <FontAwesomeIcon className="react" icon={faReact} />
-            React Developer
+            Front-end-developer(React)
           </h1>
 
           <h1 className="speciality anim anim-3">

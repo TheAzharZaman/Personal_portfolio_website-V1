@@ -17,10 +17,7 @@
   width: 295px;
   height: 295px;
   margin: 5rem 0 0;
-}
-
-.myImage__mobile {
-  background: linear-gradient(#2b78eb00, #2b78eb00), url(./myPic.jpg);
+  background: url(./myPic.jpg);
   border-radius: 5px;
   border: 2px solid rgb(81, 84, 233);
 }
