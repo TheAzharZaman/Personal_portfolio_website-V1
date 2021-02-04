@@ -162,6 +162,7 @@ let ProjectsSection = () => {
             pendingProjectLogoClass="pendingProject__vaLogo"
             githubLink="https://github.com/TheAzharZaman/Comany-Virtual-Assistant"
             liveLink="https://virtual-assistant-application.netlify.app/"
+            taglineSepcificClass="cvaTagline"
           />
           <PendingProject
             tagline="Blood Donation Marketplace"

@@ -9,6 +9,7 @@ const PendingProject = ({
   liveLink,
   tagline,
   pendingProjectLogoClass,
+  taglineSepcificClass,
 }) => {
   return (
     <div
@@ -21,7 +22,7 @@ const PendingProject = ({
       <a>
         <img className={pendingProjectLogoClass} src={logoSrc} />
       </a>
-      <h2>{tagline}</h2>
+      <h2 className={taglineSepcificClass}>{tagline}</h2>
       <h3>Track Build Progress</h3>
       <div className="pendingProjects__linksIcons">
         <a href={githubLink} target="_blank">

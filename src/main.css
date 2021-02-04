@@ -1232,6 +1232,10 @@ body {
   margin-top: 0.75rem;
 }
 
+.cvaTagline {
+  margin-top: -0.35rem !important;
+}
+
 .pendingProject > h3 {
   font-size: 16.5px;
   font-family: "Poppins", sans-serif;
