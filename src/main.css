@@ -1219,6 +1219,11 @@ body {
   width: 60px !important;
 }
 
+.pendingProject__vaLogo {
+  width: 90px !important;
+  margin-top: -1rem !important;
+}
+
 .pendingProject > h2 {
   font-size: 21.5px;
   font-family: "Poppins", sans-serif;
@@ -1248,18 +1253,19 @@ body {
 }
 
 .pendingProjects__linksIcons > a > svg {
-  color: #f06196;
   margin-top: 1.5rem;
 }
 
 .pendingProjects__linksIcons > a > .pendingProject__githubIcon {
   font-size: 22px;
   margin-right: 1rem;
+  color: white;
 }
 
 .pendingProjects__linksIcons > a > .pendingProject__externalIcon {
   font-size: 20px;
   margin-left: 1rem;
+  color: #f06196;
 }
 
 .cmsDevelopment__projectsContainer {

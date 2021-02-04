@@ -11,6 +11,7 @@ import BDLogo from "./images/bdlogo.png";
 import NetflixLogo from "./images/netflix.png";
 import MyLogo from "./images/logo.png";
 import TrackerLogo from "./images/tracker_logo.png";
+import CVALogo from "./images/cva.png";
 
 let ProjectsSection = () => {
   useEffect(() => {
@@ -56,9 +57,6 @@ let ProjectsSection = () => {
         />,
         SliderMainSpace
       );
-
-      // https://i.ibb.co/H4tQ3L7/virgodes2.jpg
-      // https://i.ibb.co/wMtggVQ/virgomob3.jpg
 
       SliderCloser();
     });
@@ -111,9 +109,6 @@ let ProjectsSection = () => {
         SliderMainSpace
       );
 
-      // https://i.ibb.co/6nBTPXK/ausdes2.jpg
-      // https://i.ibb.co/xGPyHXL/ausmob3.jpg
-
       SliderCloser();
     });
 
@@ -161,12 +156,13 @@ let ProjectsSection = () => {
         </h2>
 
         <div className="reactProjects__secondRow">
-          {/* <PendingProject
-            tagline="Working on Amazon Clone"
-            logoSrc={AmazonLogo}
-            githubLink=""
-            liveLink=""
-          /> */}
+          <PendingProject
+            tagline="Virtual Assistant Application"
+            logoSrc={CVALogo}
+            pendingProjectLogoClass="pendingProject__vaLogo"
+            githubLink="https://github.com/TheAzharZaman/Comany-Virtual-Assistant"
+            liveLink="https://virtual-assistant-application.netlify.app/"
+          />
           <PendingProject
             tagline="Blood Donation Marketplace"
             logoSrc={BDLogo}

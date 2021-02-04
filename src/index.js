@@ -4,8 +4,8 @@ import App from "./App";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
-let RootDirectory = document.getElementById("Root");
+let rootDirectory = document.getElementById("Root");
 
-ReactDOM.render(<App />, RootDirectory);
+ReactDOM.render(<App />, rootDirectory);
 
 serviceWorker.unregister();
