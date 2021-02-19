@@ -41,27 +41,25 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
-    let AttachedmailBox = document.getElementById("mail-box");
-    let Mail = document.getElementById("gmail");
-    if (Mail) {
-      Mail.addEventListener("mouseenter", () => {
-        Mail.classList.add("moveup");
-      });
-    }
+  let AttachedmailBox = document.getElementById("mail-box");
+  let Mail = document.getElementById("gmail");
+  if (Mail) {
+    Mail.addEventListener("mouseenter", () => {
+      Mail.classList.add("moveup");
+    });
+  }
 
-    if (AttachedmailBox) {
-      AttachedmailBox.addEventListener("mouseenter", () => {
-        Mail.classList.add("moveup");
-      });
-    }
+  if (AttachedmailBox) {
+    AttachedmailBox.addEventListener("mouseenter", () => {
+      Mail.classList.add("moveup");
+    });
+  }
 
-    if (AttachedmailBox) {
-      AttachedmailBox.addEventListener("mouseout", () => {
-        Mail.classList.remove("moveup");
-      });
-    }
-  }, []);
+  if (AttachedmailBox) {
+    AttachedmailBox.addEventListener("mouseout", () => {
+      Mail.classList.remove("moveup");
+    });
+  }
 
   return (
     <div className={`Main_app_ui_container ${loading && "hide__scrollbar"}`}>

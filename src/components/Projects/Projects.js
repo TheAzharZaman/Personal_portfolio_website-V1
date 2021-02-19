@@ -1,131 +1,37 @@
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import Project from "./SmallCardProjectTemplate";
-import Slider from "./Slider";
 import BigCardProjectTemplate from "./BigCardProjectTemplate";
 import PendingProject from "./PendingProject";
 import GoogleLogo from "./images/googleLogo.png";
 import AmazonLogo from "./images/amazon.png";
-import BDLogo from "./images/bdlogo.png";
 import NetflixLogo from "./images/netflix.png";
 import MyLogo from "./images/logo.png";
 import TrackerLogo from "./images/tracker_logo.png";
 import CVALogo from "./images/cva.png";
+import MuiPopup from "./MuiPopup";
 
 let ProjectsSection = () => {
+  const [openPopup, setOpenPopup] = useState(false);
+  const [popupImage, setPopupImage] = useState("");
+  const [popupAlt, setPopupAlt] = useState("");
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
-
-    let SliderMainSpace = document.getElementById("Slider-space");
-
-    let VirrgoImageOpener = document.getElementById("Virrgo-slider-opener");
-    let MashrikImageOpener = document.getElementById("Mashriq-slider-opener");
-    let AusImageOpener = document.getElementById("Aus-slider-opener");
-
-    let VirrgoPreviewPopUp = document.getElementById("Preview_popup_virrgo");
-    let AusPreviewPopUp = document.getElementById("Preview_popup_aus");
-    let MashriqPreviewPopUp = document.getElementById("Preview_popup_mashriq");
-
-    let VirrgoSrcLinkIcon = document.getElementById("Virrgo_source_link_icon");
-    let AusSrcLinkIcon = document.getElementById("Aus_source_link_icon");
-    let MashriqSrcLinkIcon = document.getElementById(
-      "Mashriq_source_link_icon"
-    );
-    let VirrgoSourceLinkPopUp = document.getElementById("Source_popup_virrgo");
-    let AusSourceLinkPopUp = document.getElementById("Source_popup_aus");
-    let MashriqSourceLinkPopUp = document.getElementById(
-      "Source_popup_mashriq"
-    );
-
-    VirrgoImageOpener.addEventListener("mouseenter", () => {
-      VirrgoPreviewPopUp.classList.add("Become_visible_with_anim");
-    });
-
-    VirrgoSrcLinkIcon.addEventListener("mouseenter", () => {
-      VirrgoSourceLinkPopUp.classList.add("Become_visible_with_anim_src_popup");
-    });
-
-    VirrgoImageOpener.addEventListener("click", () => {
-      SliderMainSpace.classList.remove("Projects-slider-invisible");
-      SliderMainSpace.classList.add("Slider-visible");
-
-      ReactDOM.render(
-        <Slider
-          image_src="https://i.ibb.co/SBFwYc4/virgocom1.jpg"
-          image_alt="Virrgo-Landing-Page-Combined-Image"
-        />,
-        SliderMainSpace
-      );
-
-      SliderCloser();
-    });
-
-    MashrikImageOpener.addEventListener("mouseenter", () => {
-      MashriqPreviewPopUp.classList.add("Become_visible_with_anim");
-    });
-
-    MashriqSrcLinkIcon.addEventListener("mouseenter", () => {
-      MashriqSourceLinkPopUp.classList.add(
-        "Become_visible_with_anim_src_popup"
-      );
-    });
-
-    MashrikImageOpener.addEventListener("click", () => {
-      SliderMainSpace.classList.remove("Projects-slider-invisible");
-      SliderMainSpace.classList.add("Slider-visible");
-
-      ReactDOM.render(
-        <Slider
-          image_src="https://i.ibb.co/yS3DGDJ/mashrikcom1.jpg"
-          image_alt="Mashrik-TV-Landing-Page-Combined-Image"
-        />,
-        SliderMainSpace
-      );
-
-      // https://i.ibb.co/k1Bnds1/mashrikdes2.jpg
-      // https://i.ibb.co/DVXmyFW/mashrikmob3.jpg
-
-      SliderCloser();
-    });
-
-    AusImageOpener.addEventListener("mouseenter", () => {
-      AusPreviewPopUp.classList.add("Become_visible_with_anim");
-    });
-
-    AusSrcLinkIcon.addEventListener("mouseenter", () => {
-      AusSourceLinkPopUp.classList.add("Become_visible_with_anim_src_popup");
-    });
-
-    AusImageOpener.addEventListener("click", () => {
-      SliderMainSpace.classList.remove("Projects-slider-invisible");
-      SliderMainSpace.classList.add("Slider-visible");
-
-      ReactDOM.render(
-        <Slider
-          image_src="https://i.ibb.co/hgnt32W/auscom1.jpg"
-          image_alt="AUSGlobal-Landing-Page-Combined-Image"
-        />,
-        SliderMainSpace
-      );
-
-      SliderCloser();
-    });
-
-    // Slider ClOSES
-
-    function SliderCloser() {
-      let SliderCloserIcon = document.getElementById("Slider__close__icon");
-
-      SliderCloserIcon.addEventListener("click", () => {
-        SliderMainSpace.classList.remove("Slider-visible");
-        SliderMainSpace.classList.add("Projects-slider-invisible");
-      });
-    }
   }, []);
+
+  const closePopup = () => {
+    setOpenPopup(false);
+  };
 
   return (
     <div className="projectsSection__mainContainer">
+      <MuiPopup
+        open={openPopup}
+        closePopup={closePopup}
+        img={popupImage}
+        alt={popupAlt}
+      />
       <div className="projectsSection__headingCont">
         <p id="scrollTo__projectsSection">h</p>
         <h3
@@ -160,16 +66,9 @@ let ProjectsSection = () => {
             tagline="Virtual Assistant Application"
             logoSrc={CVALogo}
             pendingProjectLogoClass="pendingProject__vaLogo"
-            githubLink="https://github.com/TheAzharZaman/Comany-Virtual-Assistant"
+            githubLink="https://github.com/TheAzharZaman/Comany-Virtual-Assistant.git"
             liveLink="https://virtual-assistant-application.netlify.app/"
             taglineSepcificClass="cvaTagline"
-          />
-          <PendingProject
-            tagline="Blood Donation Marketplace"
-            logoSrc={BDLogo}
-            pendingProjectLogoClass="pendingProject__bdLogo"
-            githubLink="https://github.com/TheAzharZaman/Blood_Donation_Application.git"
-            liveLink="https://azhar-blooddonation.netlify.app/"
           />
         </div>
 
@@ -280,6 +179,12 @@ let ProjectsSection = () => {
             source_link_icon_unique_id="Aus_source_link_icon"
             source_popup_indiv_id="Source_popup_aus"
             have_Two_Seprators
+            popupOpener={() => {
+              setPopupImage("https://i.ibb.co/hgnt32W/auscom1.jpg");
+              setPopupAlt("AUSGlobal-Landing-Page-Combined-Image");
+              setOpenPopup(true);
+              console.log("Worked", openPopup);
+            }}
           />
 
           <Project
@@ -297,6 +202,11 @@ let ProjectsSection = () => {
             source_link_icon_unique_id="Mashriq_source_link_icon"
             source_popup_indiv_id="Source_popup_mashriq"
             have_Two_Seprators
+            popupOpener={() => {
+              setPopupImage("https://i.ibb.co/yS3DGDJ/mashrikcom1.jpg");
+              setPopupAlt("Mashrik-TV-Landing-Page-Combined-Image");
+              setOpenPopup(true);
+            }}
           />
 
           <Project
@@ -314,6 +224,12 @@ let ProjectsSection = () => {
             source_link_icon_unique_id="Virrgo_source_link_icon"
             source_popup_indiv_id="Source_popup_virrgo"
             have_Two_Seprators
+            popupOpener={() => {
+              setPopupImage("https://i.ibb.co/SBFwYc4/virgocom1.jpg");
+              setPopupAlt("Virrgo-Landing-Page-Combined-Image");
+              setOpenPopup(true);
+              console.log("Worked", openPopup);
+            }}
           />
         </div>
       </div>

@@ -8,7 +8,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const CMSProject = ({
-  Slider_opener_id,
   project_link,
   project_heading,
   project_description,
@@ -25,12 +24,11 @@ const CMSProject = ({
   wordpress_replacing_logo_alt,
   wordpress_replacing_logo_class,
   projectSpecialClass,
-  preview_popup_indiv_id,
-  source_popup_indiv_id,
   source_link_icon_unique_id,
   smallProject__githubLink,
   needOfGitHubIcon,
   smallInLarge,
+  popupOpener,
 }) => {
   useEffect(() => {
     Aos.init({});
@@ -58,20 +56,16 @@ const CMSProject = ({
           src={wordpress_replacing_logo_src}
           alt={wordpress_replacing_logo_alt}
         />
-        <span className="sliderOpener__overlapper" id={Slider_opener_id}></span>
-        <span className="Preview__popup" id={preview_popup_indiv_id}>
-          Preview
-        </span>
         <a
           className={`Slider-opener ${no_Need_Of_Icons && "no_Need_Of_Icons"}`}
+          onClick={popupOpener}
         >
-          <FontAwesomeIcon className="icons icon3 " icon={faImages} />
+          <FontAwesomeIcon
+            className="icons icon3 sliderOpenner__icon"
+            icon={faImages}
+            onClick={popupOpener}
+          />
         </a>
-
-        <span className="Source__popup" id={source_popup_indiv_id}>
-          Source Link
-        </span>
-
         <a href={project_link} target="_blank" id={source_link_icon_unique_id}>
           <FontAwesomeIcon
             className="icons icon2"

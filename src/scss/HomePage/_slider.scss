@@ -1,50 +1,17 @@
-.Slider-space {
-  height: 100vh;
-  width: 100vw;
+.projectsImage__popup {
   background-color: rgba(65, 105, 225, 0.72);
-  position: fixed;
-  z-index: 500;
-  display: none;
 }
 
-.Slider-visible {
-  display: block;
-}
-
-.Slider-box {
-  width: 70%;
-  height: 85vh;
-  margin: 5.25rem 0 0 21rem;
-  position: relative;
-  z-index: 1000;
-  border-radius: 5px;
-  padding: 0.5rem 0 0rem 0;
-  background-color: royalblue;
-  border-top: 2px solid rgb(139, 139, 139);
-  border-left: 2px solid rgb(139, 139, 139);
-  border-right: 2px solid rgb(139, 139, 139);
-  box-shadow: 2px 15px 25px -2px rgba($color: #000000, $alpha: 0.15);
-}
-
-.Slider-img {
-  border: 2px solid rgb(102, 164, 206);
-  border-radius: 5px;
-  margin: 0 0 0 0.825rem;
-}
-
-.Slider__close__icon {
+.projectsImage__popupClose {
   position: absolute;
-  left: 1.12rem;
-  top: 0.85rem;
-  color: white;
-  font-size: 30px !important;
-  transition: color 0.12s, transform 0.2s, box-shadow 0.2s !important;
-  cursor: pointer !important;
+  top: 1rem;
+  left: 1rem;
+  color: lightblue !important;
+  font-size: 25px !important;
+  cursor: pointer;
+  transition: all 0.2s;
+}
 
-  &:hover {
-    color: rgb(177, 98, 98) !important;
-    border-right: 1px solid lightblue;
-    border-bottom: 1px solid lightblue;
-    box-shadow: 1px 1px 5px -1px rgba(90, 90, 90, 0.3);
-  }
+.projectsImage__popupClose:hover {
+  color: rgb(255, 190, 190) !important;
 }

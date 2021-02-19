@@ -45,10 +45,11 @@ function AboutComponent() {
 
           <p className="description anim anim-4 about-desk-desc">
             I'm working as full time Developer since March 2019, specializing in
-            some of the coolest and trending Web Technologies like React,
-            JavaScript, WordPress, WooCommerce etc. I'm building (and
-            occasionally designing) exceptional websites on every niche, custom
-            themes & plugins, eCommerce stores and everything in between.
+            some of the powerful and trending Web Technologies like
+            React(Redux), JavaScript(ES6+), Material UI, HTML/CSS etc. I can
+            build and design exceptional websites on every niche, web
+            applications, custom themes & interfaces, eCommerce stores with
+            custom functionalaities.
           </p>
 
           <div className="Btn-container">

@@ -98,7 +98,7 @@ function ExperienceSection() {
             <span className="extra1"> ✦ </span> <p> JavaScript(ES6+) </p>
           </div>
           <div className="Line Line2">
-            <span> ✦ </span> <p> ReactJs </p>
+            <span> ✦ </span> <p> ReactJs(Redux) </p>
             <span className="extra2"> ✦ </span>
             <p> Material UI </p>
           </div>
