@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import Aos from "aos";
 import ExperienceTemp from "./ExpereinceTemp";
+import "./Experience.css";
 
 var x = window.matchMedia("(max-width: 400px)");
 

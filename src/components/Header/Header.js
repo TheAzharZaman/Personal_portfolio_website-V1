@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "./logo.png";
 import { Link } from "react-scroll";
 import CoachingPrivateLink from "./CoachingPrivateLink";
+import "./Header.css";
 
 function HeaderSection() {
   return (

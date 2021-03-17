@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
+import "./Contact.css";
 
 let ContactSection = () => {
   useEffect(() => {

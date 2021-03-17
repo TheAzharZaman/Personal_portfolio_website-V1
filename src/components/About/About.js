@@ -6,6 +6,7 @@ import {
   faOpencart,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import "./About.css";
 
 function AboutComponent() {
   useEffect(() => {

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Experience.css";
 
 const ExpereinceTemp = ({
   specific_experience_container_class,
