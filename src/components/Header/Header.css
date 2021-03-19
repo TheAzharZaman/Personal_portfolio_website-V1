@@ -1,4 +1,4 @@
-.Header-wrapper {
+/* .Header-wrapper {
   padding-top: 1rem;
   position: relative;
   top: -10rem;
@@ -9,6 +9,32 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.header__logo {
+  width: 11rem;
+  padding-bottom: 0.25rem;
+  object-fit: contain;
+  margin: 1.4rem 0 0 3.2rem;
+}
+
+.headerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    top: -10rem;
+  }
+  100% {
+    opacity: 1;
+    top: 0rem;
+  }
+}
+
 .Nav-section ul {
   display: flex;
   flex-direction: row;
@@ -35,43 +61,14 @@
   margin-right: 2.2px;
   font-size: 14px;
 }
-.mobileContact {
-  display: none;
-}
-.Logo-section {
-  margin-left: 3rem;
-}
-.Logo {
-  width: 11rem;
-  padding-bottom: 0.25rem;
-  object-fit: contain;
-  margin: 1.4rem 0 0 3.2rem;
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-    top: -10rem;
-  }
-  100% {
-    opacity: 1;
-    top: 0rem;
-  }
-}
-.Nav-button {
-  padding: 1.37rem 2.4rem;
-  border-radius: 3px;
-  outline: none;
-  padding: 1.12rem 1.35rem;
-  border: 1.4px solid #ec4884;
-  border-radius: 3px;
-  margin: 0.4rem 5rem 0 0rem;
-  transition: all 0.25s;
-}
+
+
 .Nav-button a {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   letter-spacing: 0.7px;
 }
+
 .headerWrapper__onScroll {
   position: sticky;
   padding-top: 0.3rem;
@@ -81,9 +78,31 @@
   box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.075);
   transition: background 0.6s;
 }
+
 .headerWrapper__onScroll .Nav__ul__onScroll {
   margin-top: -1.4rem;
 }
+
 .Nav__button__onScroll {
   margin: -0.25rem 5rem 0 0rem;
+} */
+
+.Nav-items {
+  font-family: "Rubik", sans-serif;
+  font-size: 15.5px;
+  letter-spacing: 1px;
+  transition: color 0.25s;
+}
+.Nav-items span {
+  font-family: "Rubik", sans-serif;
+  margin-right: 2.2px;
+  font-size: 14px;
+}
+.Nav-button {
+  border-radius: 3px;
+  outline: none;
+  padding: 1.12rem 1.35rem;
+  border: 1.4px solid #ec4884;
+  border-radius: 3px;
+  transition: all 0.25s;
 }

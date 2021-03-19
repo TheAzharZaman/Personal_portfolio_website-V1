@@ -14,7 +14,7 @@ import Loading from "../components/Loading/loading";
 
 function App() {
   const [show, setShow] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   // const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -84,7 +84,7 @@ function App() {
             </div>
             <div className="Scroll__to__top__wrapper">
               <Link
-                to="Scroll__to__top__dest"
+                to="scrollToTopDest"
                 smooth={true}
                 duration={1500}
                 onClick={() => {

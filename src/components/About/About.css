@@ -1,23 +1,23 @@
-.About-wrapper {
+.aboutSection__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 9.4rem 0 0 18rem;
+  margin: 9rem 0 0 18rem;
 }
-.About-wrapper #about-dest {
+.aboutSection__wrapper #about-dest {
   position: absolute;
   top: -12rem;
   font-size: 1px;
 }
-.About-wrapper .text1 {
+.aboutSection__wrapper .text1 {
   font-family: "Recursive", sans-serif;
   font-weight: 400;
   font-size: 18px;
   margin-left: 1.8rem;
   letter-spacing: 1px;
 }
-.About-wrapper .name {
+.aboutSection__wrapper .name {
   margin-top: 1rem;
   font-family: "Rubik", sans-serif;
   font-family: "Poppins", sans-serif;
@@ -27,7 +27,7 @@
   letter-spacing: 1.5px;
   text-shadow: 0.4px 0.4px 1.5px -1px #aca8a8;
 }
-.About-wrapper .speciality {
+.aboutSection__wrapper .speciality {
   font-family: "Rubik", sans-serif;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -37,17 +37,17 @@
   text-shadow: 0.3px 0.3px 2px -1px #aca8a8;
   line-height: 4.45rem;
 }
-.About-wrapper .description {
+.aboutSection__wrapper .description {
   margin: 3.1rem 0rem 0rem 1.2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   max-width: 600px;
   font-size: 17px;
 }
-.About-wrapper .Btn-container {
+.aboutSection__wrapper .Btn-container {
   margin-top: 6.5rem;
 }
-.About-wrapper .About-btn {
+.aboutSection__wrapper .About-btn {
   border: 0.1px solid #ec4884;
   padding: 1.37rem 2.4rem;
   border-radius: 3px;
@@ -58,10 +58,10 @@
   font-size: 15.5px;
   letter-spacing: 1px;
 }
-.About-wrapper .My-image {
+.aboutSection__wrapper .My-image {
   z-index: 3;
 }
-.About-wrapper .My-image .My-img-cont {
+.aboutSection__wrapper .My-image .My-img-cont {
   width: 300px;
   height: 300px;
   margin: -2.2rem 19.2rem 0 0;
@@ -70,7 +70,7 @@
   right: 4rem;
   z-index: 2;
 }
-.About-wrapper .My-image .Back-border1 {
+.aboutSection__wrapper .My-image .Back-border1 {
   position: absolute;
   top: -14.8rem;
   right: 22.1rem;
@@ -79,7 +79,7 @@
   height: 300px;
   border: 2px solid #ec4884;
 }
-.About-wrapper .My-image .Back-border2 {
+.aboutSection__wrapper .My-image .Back-border2 {
   border: 2px solid #ec4884;
   width: 300px;
   height: 300px;
@@ -88,7 +88,7 @@
   top: -12.55rem;
   border-radius: 5px;
 }
-#Scroll__to__top__dest {
+#scrollToTopDest {
   position: absolute;
   top: 0;
   left: 10rem;

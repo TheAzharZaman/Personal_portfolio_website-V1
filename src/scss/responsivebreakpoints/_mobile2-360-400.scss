@@ -68,11 +68,11 @@
 
   // About Section //////
 
-  .About-wrapper {
+  .aboutSection__wrapper {
     @include flex(space-between, column);
     margin: 6rem 0 0 0rem;
 
-    #about-dest {
+    #aboutSection__dest {
       position: absolute;
       top: -12rem;
       font-size: 1px;

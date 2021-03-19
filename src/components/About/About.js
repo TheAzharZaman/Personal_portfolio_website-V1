@@ -28,7 +28,7 @@ function AboutComponent() {
   return (
     <div className="About-UI">
       <p id="Scroll__to__top__dest"></p>
-      <div className="About-wrapper">
+      <div className="aboutSection__wrapper">
         <div className="About-content">
           <p id="about-dest">hello</p>
           <h3 className="text1 anim anim-1">Hi, my name</h3>
