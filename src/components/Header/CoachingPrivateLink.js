@@ -4,12 +4,7 @@ import { Link } from "react-router-dom";
 const CoachingPrivateLink = () => {
   return (
     <li>
-      <Link
-        to="/coaching/front-end-development/batch1/overview"
-        className="Nav-items Pointer"
-      >
-        <span>05-</span> Coaching
-      </Link>
+      <Link to="/coaching/front-end-development/batch1/overview">Coaching</Link>
     </li>
   );
 };

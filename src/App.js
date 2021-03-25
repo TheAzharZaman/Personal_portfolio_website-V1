@@ -6,10 +6,12 @@ import CoachingOverview from "./Pages/Coaching/CoachingOverview";
 import EnrollNow from "./Pages/Coaching/EnrollNow";
 import EnrolledStudents from "./Pages/Coaching/EnrolledStudents";
 import EnrollementSuccess from "./Pages/Coaching/EnrollementSuccess";
+import { CssBaseline } from "@material-ui/core";
 
 const App = () => {
   return (
-    <div className="App__main__container">
+    <>
+      <CssBaseline />
       <Router>
         <Switch>
           <Route exact path="/">
@@ -32,7 +34,7 @@ const App = () => {
           </Route>
         </Switch>
       </Router>
-    </div>
+    </>
   );
 };
 

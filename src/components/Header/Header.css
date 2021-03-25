@@ -1,108 +1,56 @@
-/* .Header-wrapper {
-  padding-top: 1rem;
-  position: relative;
-  top: -10rem;
-  opacity: 0;
-  animation: appear 1s 0.3s ease-in forwards;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__logo {
-  width: 11rem;
-  padding-bottom: 0.25rem;
-  object-fit: contain;
-  margin: 1.4rem 0 0 3.2rem;
+.headerNav__tabs button span {
+  text-transform: none !important;
+  font-family: "Teko", sans-serif;
+  font-size: calc(13px + 0.8vw);
+  font-weight: 500;
 }
 
 .headerMenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-    top: -10rem;
-  }
-  100% {
-    opacity: 1;
-    top: 0rem;
+@media (min-width: 350px) {
+  .MuiTab-root {
+    min-width: 67px !important;
   }
 }
 
-.Nav-section ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Recursive", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  margin-left: 59rem;
-  margin-top: -1rem;
-}
-.Nav-section ul li {
-  margin: 0 0 0 2rem;
-  padding-top: 1.2rem;
-}
-.Nav-section ul li a {
-  font-family: "Rubik", sans-serif;
-  font-size: 15.5px;
-  letter-spacing: 1px;
-  transition: color 0.25s;
-}
-.Nav-section ul li span {
-  font-family: "Rubik", sans-serif;
-  margin-right: 2.2px;
-  font-size: 14px;
+@media (min-width: 400px) {
+  .MuiTab-root {
+    min-width: 80px !important;
+  }
 }
 
-
-.Nav-button a {
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.7px;
+@media (min-width: 500px) {
+  .MuiTab-root {
+    min-width: 100px !important;
+  }
 }
 
-.headerWrapper__onScroll {
-  position: sticky;
-  padding-top: 0.3rem;
-  background-color: #213397;
-  z-index: 80;
-  border-bottom: 1px solid #1a2c92;
-  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.075);
-  transition: background 0.6s;
+@media (min-width: 600px) {
+  .MuiTab-root {
+    min-width: 120px !important;
+  }
 }
 
-.headerWrapper__onScroll .Nav__ul__onScroll {
-  margin-top: -1.4rem;
+@media (min-width: 800px) {
+  .MuiTab-root {
+    min-width: 140px !important;
+  }
 }
 
-.Nav__button__onScroll {
-  margin: -0.25rem 5rem 0 0rem;
-} */
+@media (min-width: 960px) {
+  .MuiTab-root {
+    min-width: 150px !important;
+  }
+}
 
-.Nav-items {
-  font-family: "Rubik", sans-serif;
-  font-size: 15.5px;
-  letter-spacing: 1px;
-  transition: color 0.25s;
+.headerMenu > h3 {
+  padding: 0 15px;
 }
-.Nav-items span {
-  font-family: "Rubik", sans-serif;
-  margin-right: 2.2px;
-  font-size: 14px;
-}
-.Nav-button {
-  border-radius: 3px;
-  outline: none;
-  padding: 1.12rem 1.35rem;
-  border: 1.4px solid #ec4884;
-  border-radius: 3px;
-  transition: all 0.25s;
+
+.MuiTab-root {
+  padding: 10px 12px !important;
+  max-width: 180px !important;
 }
