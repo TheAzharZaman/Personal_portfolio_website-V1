@@ -1,0 +1,37 @@
+.aboutSection {
+  min-height: 90vh;
+}
+
+.aboutSection__left {
+  padding: 0 1rem;
+}
+
+.aboutSection__right {
+  padding: 0 1rem;
+}
+
+.aboutSection__leftBg {
+  width: 100%;
+  min-height: 90vh;
+  background: url("./tony.png");
+  background-position: right;
+  background-size: cover;
+}
+
+.p,
+.p2 {
+  text-align: right;
+  margin-top: 2.5rem;
+  font-size: 19px;
+  padding: 0.65rem;
+  background-color: rgba(0, 139, 139, 0.418);
+  color: aliceblue;
+  font-weight: 500;
+  font-family: "Poppins", "Teko";
+  border-radius: 10px;
+}
+
+.p2 {
+  margin-top: 2.5rem !important;
+  text-align: left;
+}

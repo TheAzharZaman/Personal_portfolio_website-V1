@@ -1,11 +1,11 @@
 import React from "react";
 import HomePage from "./Pages/Homepage";
-import Pricing from "./Pages/Pricing";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import CoachingOverview from "./Pages/Coaching/CoachingOverview";
-import EnrollNow from "./Pages/Coaching/EnrollNow";
-import EnrolledStudents from "./Pages/Coaching/EnrolledStudents";
-import EnrollementSuccess from "./Pages/Coaching/EnrollementSuccess";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import { CssBaseline } from "@material-ui/core";
 
 const App = () => {
@@ -14,24 +14,12 @@ const App = () => {
       <CssBaseline />
       <Router>
         <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/pricing">
-            <Pricing />
-          </Route>
-          <Route path="/coaching/front-end-development/batch1/overview">
-            <CoachingOverview />
-          </Route>
-          <Route path="/coaching/front-end-development/batch1/enrollment">
-            <EnrollNow />
-          </Route>
-          <Route path="/coaching/front-end-development/batch1/enrollement-successful">
-            <EnrollementSuccess />
-          </Route>
-          <Route path="/coaching/front-end-development/batch1/enrolled-students">
-            <EnrolledStudents />
-          </Route>
+          <Redirect exact from="/" to="/about" />
+          <Route
+            exact
+            path="/:page?"
+            render={(props) => <HomePage {...props} />}
+          />
         </Switch>
       </Router>
     </>

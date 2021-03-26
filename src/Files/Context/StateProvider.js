@@ -1,16 +1,22 @@
-import React, { createContext, useReducer, useContext } from "react";
+import React, { createContext, useContext, useReducer } from "react";
+
+// Initilizing Context by creating it with React.createContext
 
 const CreatedContext = createContext();
 
-export const StateProvider = ({ initialState, reducer, children }) => {
-  console.log(children);
-  return (
-    <CreatedContext.Provider value={useReducer(reducer, initialState)}>
-      {children}
-    </CreatedContext.Provider>
-  );
-};
+// Preparing a whole milky stuff, by creating a wrapper that covers the whole stuff using this Context lateron
 
-export const useStateValue = () => {
+const StateProvider = ({ children, reducer, initialState }) => (
+  <CreatedContext.Provider value={useReducer(reducer, initialState)}>
+    {children}
+  </CreatedContext.Provider>
+);
+
+// Creating a pulling information mechanism by using above created context
+
+const useStateValue = () => {
   return useContext(CreatedContext);
 };
+
+export default useStateValue;
+export { StateProvider };

@@ -1,17 +1,45 @@
 import React, { useEffect, useState } from "react";
 import Logo from "./logo.png";
 import { Link } from "react-scroll";
-import "./Header.css";
 import { AppBar, Grid, Tabs, Tab } from "@material-ui/core";
-import { useStateValue } from "../../Files/Context/StateProvider";
+import useStateValue from "../../Files/Context/StateProvider";
+import { tabIndexToName, tabNameToIndex } from "../../Files/utiils";
+import { useHistory } from "react-router-dom";
+import "./Header.css";
 
 function HeaderSection() {
-  const state = useStateValue();
-  const [selectedTab, setSelectedTab] = useState(0);
+  const [{ activeTabIndex, activeViewSlug }, dispatch] = useStateValue();
+
+  const [selectedTab, setSelectedTab] = useState(
+    tabNameToIndex[activeViewSlug]
+      ? tabNameToIndex[activeViewSlug]
+      : activeTabIndex
+  );
+
+  console.log(tabNameToIndex[activeViewSlug]);
+  console.log(selectedTab);
+
   const [desktopHeader, setDesktopHeader] = useState(true);
 
+  const history = useHistory();
+
+  // Tab Changing Mechs
+
+  useEffect(() => {
+    setSelectedTab(tabNameToIndex[activeViewSlug]);
+    dispatch({
+      type: "SET_ACTIVE_TAB_INDEX",
+      index: tabNameToIndex[activeViewSlug],
+    });
+  }, [tabNameToIndex, activeViewSlug]);
+
   const handleTabChange = (e, newValue) => {
+    history.push(`/${tabIndexToName[newValue]}`);
     setSelectedTab(newValue);
+    dispatch({
+      type: "SET_ACTIVE_TAB_INDEX",
+      index: newValue,
+    });
   };
 
   useEffect(() => {
@@ -25,11 +53,8 @@ function HeaderSection() {
       setDesktopHeader(true);
     }
   }
-
   var x = window.matchMedia("(max-width: 960px)");
   x.addListener(myFunction);
-
-  console.log(desktopHeader);
 
   return (
     <AppBar className="mainHeader">
