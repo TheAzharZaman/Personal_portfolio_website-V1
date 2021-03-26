@@ -82,6 +82,7 @@ function HeaderSection() {
         >
           <Grid item className="headerMenu">
             <Tabs
+              indicatorColor="primary"
               centered
               value={selectedTab}
               variant="standard"

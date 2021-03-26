@@ -1,32 +1,29 @@
-.aboutSection {
-  min-height: 90vh;
-}
-
-.aboutSection__left {
-  padding: 0 1rem;
-}
-
-.aboutSection__right {
-  padding: 0 1rem;
-}
-
 .aboutSection__leftBg {
-  width: 100%;
-  min-height: 90vh;
+  width: 77%;
+  min-height: 91.5vh;
   background: url("./tony.png");
-  background-position: right;
   background-size: cover;
+  background-position-x: left;
+}
+
+.aboutSection__leftContent {
+  padding: 0 3rem 0 7rem;
+  transform: translateX(30%);
+}
+
+.aboutSection__rightContent {
+  padding: 0 7rem 0 3rem;
+  transform: translateX(-30%);
 }
 
 .p,
 .p2 {
   text-align: right;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   font-size: 19px;
   padding: 0.65rem;
-  background-color: rgba(0, 139, 139, 0.418);
+  background-color: rgba(255, 134, 21, 0.418);
   color: aliceblue;
-  font-weight: 500;
   font-family: "Poppins", "Teko";
   border-radius: 10px;
 }
@@ -34,4 +31,5 @@
 .p2 {
   margin-top: 2.5rem !important;
   text-align: left;
+  background-color: rgba(211, 211, 211, 0.445);
 }

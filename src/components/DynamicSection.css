@@ -1,3 +1,11 @@
 .homepage__dynamicSection {
-  margin-top: 66px;
+  min-height: 100vh;
+  background: linear-gradient(
+      45deg,
+      rgba(50, 112, 245, 0.54),
+      rgba(50, 112, 245, 0.54)
+    ),
+    url("./bg.jpg");
+  background-size: cover;
+  padding-top: 4rem;
 }

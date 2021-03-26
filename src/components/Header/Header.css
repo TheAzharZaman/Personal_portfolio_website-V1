@@ -1,8 +1,17 @@
+.mainHeader {
+  background-color: rgba(202, 202, 202, 0.15) !important;
+  box-shadow: 0 1.5px 7px 0 #0000004d !important;
+}
+
 .headerNav__tabs button span {
   text-transform: none !important;
   font-family: "Teko", sans-serif;
   font-size: calc(13px + 0.8vw);
   font-weight: 500;
+}
+
+.MuiButtonBase-root > span {
+  color: rgb(247, 247, 247);
 }
 
 .headerMenu {
