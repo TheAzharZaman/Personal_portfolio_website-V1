@@ -6,6 +6,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import "./App.css";
 import { CssBaseline } from "@material-ui/core";
 
 const App = () => {

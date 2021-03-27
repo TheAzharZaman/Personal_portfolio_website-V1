@@ -1,8 +1,19 @@
-@import "./myImageCSS.css";
-@import "./Attachments.css";
-@import "./main.css";
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  object-fit: contain;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
