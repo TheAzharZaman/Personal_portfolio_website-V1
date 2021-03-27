@@ -16,9 +16,6 @@ function HeaderSection() {
       : activeTabIndex
   );
 
-  console.log(tabNameToIndex[activeViewSlug]);
-  console.log(selectedTab);
-
   const [desktopHeader, setDesktopHeader] = useState(true);
 
   const history = useHistory();

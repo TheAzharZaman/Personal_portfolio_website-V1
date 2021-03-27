@@ -7,7 +7,7 @@ const About = () => {
     <div className="aboutSection">
       <div className="aboutSection__background">
         <div className="aboutSection__content">
-          <p className="leftSide__message lsfm">Hey STOP Here! Who are you?</p>
+          <p className="leftSide__message lsfm">Hey STOP! Who are you?</p>
           <p className="rightSide__message rsfm">
             I'm Inevitable{" "}
             <img

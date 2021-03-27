@@ -33,7 +33,6 @@ const App = ({ match }) => {
         {activeTabIndex === 3 && <Contact />}
         {activeTabIndex === 4 && <Coaching />}
       </DynamicSection>
-      {/* <FooterSection /> */}
     </div>
   );
 };

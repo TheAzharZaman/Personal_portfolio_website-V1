@@ -8,4 +8,26 @@
     url("./bg.jpg");
   background-size: cover;
   padding-top: 4rem;
+  position: relative;
+}
+
+.dynamicSection__control {
+  position: absolute;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.dynamicSection__control:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dynamicSection__control.backward {
+  transform: rotate(180deg);
+  left: 1rem;
+  top: 50%;
+}
+
+.dynamicSection__control.forward {
+  right: 1rem;
+  top: 50%;
 }
