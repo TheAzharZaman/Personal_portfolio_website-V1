@@ -1,38 +1,58 @@
-.aboutSection__left {
-}
-
-.aboutSection__right {
-}
-
-.aboutSection__leftBg {
-  width: 77%;
+.aboutSection__background {
+  margin: 0 auto;
   min-height: 91.5vh;
   background: url("./tonny.png");
-  background-size: cover;
   background-position-x: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 95%;
+  padding-left: 10rem;
 }
 
-.aboutSection__rightBg {
-  min-height: 91.5vh;
-}
-
-.aboutSection__leftContent {
+.aboutSection__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 90vh;
-  transform: translateX(15%);
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
-.aboutSection__rightContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: 90vh;
+@media (max-width: 1200px) {
+  .aboutSection__background {
+    width: 95%;
+    padding-left: unset;
+  }
+
+  .aboutSection__content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutSection {
+    padding-top: 1.5rem;
+  }
+
+  .aboutSection__background {
+    width: 95%;
+    padding-left: unset;
+  }
+
+  .aboutSection__content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutSection__background {
+    width: 95%;
+    padding-left: unset;
+  }
+
+  .aboutSection__content {
+    width: 90%;
+  }
 }
 
 .leftSide__message,
@@ -44,37 +64,42 @@
   font-family: "Teko", "Poppins";
   letter-spacing: 0.8px;
   font-size: 25px;
+  margin: 0;
 }
 
 .leftSide__message {
   background-color: rgba(255, 134, 21, 0.418);
   background-color: rgba(175, 174, 173, 0.55);
+  align-self: flex-start;
+}
+
+.lsfm {
   margin-top: 2.5rem;
+}
+
+.lssm,
+.rsfourthm {
+  margin-top: 0.25rem;
+}
+
+.rsfm,
+.rssm,
+.lsfourthm {
+  margin-top: 1rem;
+}
+
+.lstm {
+  margin-top: 1.2rem;
+}
+
+.rstm {
+  margin-top: 1.55rem;
 }
 
 .rightSide__message {
   background-color: rgba(140, 255, 95, 0.55);
-  margin-top: 2.5rem;
-}
 
-.lsfm {
-  margin-top: -1rem;
-}
-
-.lssm {
-  margin-top: 3rem;
-}
-
-.lstm {
-  margin-top: 4rem;
-}
-
-.lsfourthm {
-  margin-top: 5.5rem;
-}
-
-.rsfm {
-  margin-top: 5rem;
+  align-self: flex-end;
 }
 
 .leftSide__message > a,
@@ -91,4 +116,62 @@
 .leftSide__message > a:hover,
 .rightSide__message > a:hover {
   color: #005eda;
+}
+
+/* Animations*/
+
+.aboutSection__background {
+  opacity: 0;
+}
+
+.lsfm,
+.lssm,
+.lstm,
+.lsfourthm {
+  opacity: 0;
+  transform: scale(0.7) translateX(-10%);
+}
+
+.rsfm,
+.rssm,
+.rstm,
+.rsfourthm {
+  opacity: 0;
+  transform: scale(0.7) translateX(10%);
+}
+
+.aboutSection__background {
+  animation: simlpe_fade 1.25s linear 0.5s forwards;
+}
+
+.lsfm {
+  animation: grow_translate_scale 0.75s linear 1s forwards;
+}
+
+.rsfm {
+  animation: grow_translate_scale 0.75s linear 2s forwards;
+}
+
+.lssm {
+  animation: grow_translate_scale 0.75s linear 3s forwards;
+}
+
+.rssm {
+  animation: grow_translate_scale 0.75s linear 4s forwards;
+}
+
+.lstm {
+  animation: grow_translate_scale 0.75s linear 5s forwards;
+}
+
+.rstm {
+  animation: grow_translate_scale 0.75s linear 6s forwards;
+}
+
+.lsfourthm {
+  animation: grow_translate_scale 0.75s linear 7s forwards;
+}
+
+.rsfourthm {
+  animation: grow_translate_scale 0.75s linear 8s forwards;
 }

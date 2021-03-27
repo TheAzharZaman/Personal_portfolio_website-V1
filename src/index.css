@@ -17,3 +17,25 @@ a {
 li {
   list-style-type: none;
 }
+
+/* Animations */
+
+@keyframes simlpe_fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow_translate_scale {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
