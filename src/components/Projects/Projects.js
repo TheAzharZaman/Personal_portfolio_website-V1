@@ -165,52 +165,45 @@ let ProjectsSection = () => {
         </h2>
         <div className="cmsDevelopment__firstRow">
           <Project
-            Slider_opener_id="Aus-slider-opener"
-            project_link="http://ausglobalgroup.com/"
-            project_heading="Construction Comp."
-            project_description="Redesigned the website to give a new look, fulfilling the modern criterias. AUSGlobal is a construction and investment company based in Perth(WA)."
+            project_link="https://plannative.com/"
+            project_heading="HBO Services Company"
+            project_description="Plan Native is a Multinational Business Process Outsourcing Company of Professional Accountants, CPAs, HR Specialists, IT Experts etc."
             tech_1="Wordpress"
             tech_link_1="https://wordpress.org/"
             tech_2="Elementor Pro"
             tech_link_2="https://elementor.com/pro/"
-            tech_3="Astra Pro"
-            tech_link_3="https://wpastra.com/pro/"
-            preview_popup_indiv_id="Preview_popup_aus"
-            source_link_icon_unique_id="Aus_source_link_icon"
-            source_popup_indiv_id="Source_popup_aus"
+            tech_3="RS6"
+            tech_link_3="https://www.sliderrevolution.com/"
             have_Two_Seprators
             popupOpener={() => {
-              setPopupImage("https://i.ibb.co/hgnt32W/auscom1.jpg");
-              setPopupAlt("AUSGlobal-Landing-Page-Combined-Image");
+              setPopupImage(
+                "https://i.ibb.co/dBRZ5Zg/Plan-Native-Landing-Page-New.png"
+              );
+              setPopupAlt("Plan Native Landing Page");
               setOpenPopup(true);
-              console.log("Worked", openPopup);
             }}
           />
 
           <Project
-            Slider_opener_id="Mashriq-slider-opener"
             project_link="http://mashriqtv.pk/"
             project_heading="Mashriq T.V.."
             project_description="Mashriq T.V Peshawer is daily news reporting website built on Wordpress. This particular website is extensive application of Wordpress."
-            tech_1="Wordpress"
             tech_link_1="https://wordpress.org/"
             tech_2="Elementor Pro"
             tech_link_2="https://elementor.com/pro/"
             tech_3="Urdu Paper"
             tech_link_3="https://stylothemes.com/shop/product/urdupress-premium-urdu-theme-for-wordpress/"
-            preview_popup_indiv_id="Preview_popup_mashriq"
-            source_link_icon_unique_id="Mashriq_source_link_icon"
-            source_popup_indiv_id="Source_popup_mashriq"
             have_Two_Seprators
             popupOpener={() => {
-              setPopupImage("https://i.ibb.co/yS3DGDJ/mashrikcom1.jpg");
-              setPopupAlt("Mashrik-TV-Landing-Page-Combined-Image");
+              setPopupImage(
+                "https://i.ibb.co/r0Vr0W2/Mashriq-TV-Landing-Page-New.png"
+              );
+              setPopupAlt("AUSGlobal-Landing-Page-Combined-Image");
               setOpenPopup(true);
             }}
           />
 
           <Project
-            Slider_opener_id="Virrgo-slider-opener"
             project_link="https://virrgotech.com/"
             project_heading="Digital Agency"
             project_description="Built a dynamic All-in-one website for Digital Marketing Agency based in Lahore (Pakistan). Website has eye-striking look; sufficient for leads."
@@ -220,15 +213,13 @@ let ProjectsSection = () => {
             tech_link_2="https://elementor.com/pro/"
             tech_3="2020"
             tech_link_3="https://wordpress.org/themes/twentytwenty/"
-            preview_popup_indiv_id="Preview_popup_virrgo"
-            source_link_icon_unique_id="Virrgo_source_link_icon"
-            source_popup_indiv_id="Source_popup_virrgo"
             have_Two_Seprators
             popupOpener={() => {
-              setPopupImage("https://i.ibb.co/SBFwYc4/virgocom1.jpg");
-              setPopupAlt("Virrgo-Landing-Page-Combined-Image");
+              setPopupImage(
+                "https://i.ibb.co/Cz7jY7t/Virrgo-Tech-Landing-Page-New.png"
+              );
+              setPopupAlt("VirrgoTech Landing Page ");
               setOpenPopup(true);
-              console.log("Worked", openPopup);
             }}
           />
         </div>
