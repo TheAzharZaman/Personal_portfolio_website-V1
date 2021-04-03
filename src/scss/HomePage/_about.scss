@@ -25,22 +25,22 @@
     text-shadow: 0.4px 0.4px 1.5px -1px rgb(172, 168, 168);
   }
   .speciality {
-    font-family: "Rubik", sans-serif;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", "Rubik", sans-serif;
     font-weight: 400;
     margin: 0.5rem 0 0 0.8rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     letter-spacing: 0.5px;
     text-shadow: 0.3px 0.3px 2px -1px rgb(172, 168, 168);
     line-height: 4.45rem;
   }
   .description {
     margin: 3.1rem 0rem 0rem 1.2rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
     font-weight: 400;
     max-width: 600px;
     font-size: 17px;
-    // letter-spacing: 0.3px;
   }
 
   .Btn-container {
@@ -102,8 +102,8 @@
 
 .wordpress,
 .react {
-  font-size: 30px;
-  margin: 0 1rem 0 0.5rem;
+  font-size: 25px;
+  margin: 0 1rem 0 0.52rem;
 }
 
 .wordpress {
@@ -111,7 +111,7 @@
 }
 
 .react {
-  font-size: 32px;
+  font-size: 27px;
 }
 
 @keyframes appearabout {

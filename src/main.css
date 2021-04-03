@@ -300,7 +300,7 @@ body {
 }
 
 .Nav-section ul li a {
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", "Rubik", sans-serif;
   font-size: 15.5px;
   letter-spacing: 1px;
   -webkit-transition: color 0.25s;
@@ -433,11 +433,10 @@ body {
 }
 
 .About-wrapper .speciality {
-  font-family: "Rubik", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", "Rubik", sans-serif;
   font-weight: 400;
   margin: 0.5rem 0 0 0.8rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   letter-spacing: 0.5px;
   text-shadow: 0.3px 0.3px 2px -1px #aca8a8;
   line-height: 4.45rem;
@@ -445,7 +444,9 @@ body {
 
 .About-wrapper .description {
   margin: 3.1rem 0rem 0rem 1.2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
   font-weight: 400;
   max-width: 600px;
   font-size: 17px;
@@ -510,8 +511,8 @@ body {
 
 .wordpress,
 .react {
-  font-size: 30px;
-  margin: 0 1rem 0 0.5rem;
+  font-size: 25px;
+  margin: 0 1rem 0 0.52rem;
 }
 
 .wordpress {
@@ -519,7 +520,7 @@ body {
 }
 
 .react {
-  font-size: 32px;
+  font-size: 27px;
 }
 
 @-webkit-keyframes appearabout {
@@ -694,10 +695,11 @@ body {
 
 .expertiesContent__wrapper .expertiseText {
   margin: 0rem 0 1.5rem 3rem;
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
   letter-spacing: 0.3px;
-  font-family: "Poppins", sans-serif;
-  max-width: 515px;
   font-size: 16.5px;
+  max-width: 515px;
 }
 
 .expertiesContent__wrapper .Tagline {
@@ -712,7 +714,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Recursive", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.45px;
   font-weight: 400;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -734,23 +737,23 @@ body {
 }
 
 .expertiesContent__wrapper .extra1 {
-  margin-left: 5.25rem;
+  margin-left: 4.25rem;
 }
 
 .expertiesContent__wrapper .extra2 {
-  margin-left: 12.9rem;
+  margin-left: 7.5rem;
 }
 
 .expertiesContent__wrapper .extra3 {
-  margin-left: 12.4rem;
+  margin-left: 10.75rem;
 }
 
 .expertiesContent__wrapper .extra4 {
-  margin-left: 1.55rem;
+  margin-left: 1.65rem;
 }
 
 .expertiesContent__wrapper .extra5 {
-  margin-left: 2.65rem;
+  margin-left: 0.85rem;
 }
 
 .Experience-mid-border-div {
@@ -814,7 +817,7 @@ body {
 }
 
 .Time-duration {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Roboto", sans-serif;
   font-weight: 300;
   font-size: 14px;
   margin-top: 0.7rem;
@@ -831,10 +834,11 @@ body {
 }
 
 .Lower-space-point {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
   font-weight: 300;
-  font-size: 15.25px;
-  letter-spacing: 0.5px;
+  font-size: 16.25px;
+  letter-spacing: 0.25px;
 }
 
 .Marcom-lower-point-2 {
@@ -909,6 +913,10 @@ body {
 
 .projectsSection__mainContainer {
   margin: 52rem 0 0rem 0rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .projectsSection__headingCont {
@@ -1112,10 +1120,11 @@ body {
 .bigProject__cardBody .bigProjects__desc {
   color: #c4c4c4;
   margin-top: -1.5rem;
-  font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
+  font-size: 17.2px;
   color: #b6b4b4;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 
 .bigProject__cardFooter {
@@ -1124,7 +1133,7 @@ body {
 }
 
 .bigProject__cardFooter p span {
-  cursor: pointer;
+  font-family: "Roboto", "Poppins", sans-serif;
   margin: 0 0.2rem;
 }
 
@@ -1326,19 +1335,18 @@ body {
 }
 
 .smallProjects__desc {
-  font-family: "Poppins", sans-serif;
-  font-size: 15.5px;
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  font-size: 17.2px;
   font-weight: 400;
-  letter-spacing: 0.5px;
 }
 
 .projects__tech,
 .projects__tech a {
-  font-family: "Recursive", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", "Poppins", sans-serif;
+  letter-spacing: 0.4px;
   font-size: 14.2px;
-  letter-spacing: 0.7px;
-  text-shadow: 0.1px 0.3px 10px -1px rgba(0, 0, 0, 0.2);
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
   margin: 0 0.5rem;
@@ -1372,45 +1380,6 @@ body {
   margin-left: 0.45rem;
 }
 
-.Preview__popup {
-  position: absolute;
-  right: 10rem;
-  top: 3rem;
-  width: 6rem;
-  color: #042a64;
-  height: 2.2rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-family: "Poppins" sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.35px;
-  border-bottom-left-radius: 2.2px;
-  border-top-right-radius: 2.2px;
-  border-top-left-radius: 2.2px;
-  display: none;
-  opacity: 0;
-}
-
-.Source__popup {
-  position: absolute;
-  right: -1rem;
-  top: 0.9rem;
-  width: 8.35rem;
-  height: 2.2rem;
-  color: #042a64;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-family: "Poppins" sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.35px;
-  border-top-right-radius: 2.2px;
-  border-top-left-radius: 2.2px;
-  display: none;
-  opacity: 0;
-}
-
 .Contact-section-wrapper {
   margin: 35rem 0 17rem 0rem;
   text-align: center;
@@ -1434,11 +1403,12 @@ body {
 }
 
 .Hesitate {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 17.5px;
   margin-top: 2rem;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.25px;
   max-width: 51rem;
   margin: 2rem auto;
 }

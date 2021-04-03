@@ -43,10 +43,11 @@
 
   .expertiseText {
     margin: 0rem 0 1.5rem 3rem;
+    font-family: "Roboto", "Poppins", sans-serif;
+    line-height: 1.6;
     letter-spacing: 0.3px;
-    font-family: "Poppins", sans-serif;
-    max-width: 515px;
     font-size: 16.5px;
+    max-width: 515px;
   }
 
   .Tagline {
@@ -59,7 +60,8 @@
 
   .Line {
     display: flex;
-    font-family: "Recursive", sans-serif;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.45px;
     font-weight: 400;
     flex-direction: row;
     font-size: 15px;
@@ -78,23 +80,23 @@
   }
 
   .extra1 {
-    margin-left: 5.25rem;
+    margin-left: 4.25rem;
   }
 
   .extra2 {
-    margin-left: 12.9rem;
+    margin-left: 7.5rem;
   }
 
   .extra3 {
-    margin-left: 12.4rem;
+    margin-left: 10.75rem;
   }
 
   .extra4 {
-    margin-left: 1.55rem;
+    margin-left: 1.65rem;
   }
 
   .extra5 {
-    margin-left: 2.65rem;
+    margin-left: 0.85rem;
   }
 }
 
@@ -147,7 +149,7 @@
 }
 
 .Time-duration {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Roboto", sans-serif;
   font-weight: 300;
   font-size: 14px;
   margin-top: 0.7rem;
@@ -164,10 +166,11 @@
 }
 
 .Lower-space-point {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
   font-weight: 300;
-  font-size: 15.25px;
-  letter-spacing: 0.5px;
+  font-size: 16.25px;
+  letter-spacing: 0.25px;
 }
 
 .Marcom-lower-point-2 {

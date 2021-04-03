@@ -100,11 +100,11 @@ function ExperienceSection() {
           <div className="Line Line2">
             <span> ✦ </span> <p> ReactJs(Redux) </p>
             <span className="extra2"> ✦ </span>
-            <p> Material UI </p>
+            <p> GatsbyJs </p>
           </div>
           <div className="Line Line3">
-            <span> ✦ </span> <p> Firebase </p>
-            <span className="extra3"> ✦ </span> <p> UX/UI Designing </p>
+            <span> ✦ </span> <p> Material UI </p>
+            <span className="extra3"> ✦ </span> <p> Firebase </p>
           </div>
 
           {/* Wordpress */}
@@ -115,7 +115,7 @@ function ExperienceSection() {
             <span className="extra4"> ✦ </span> <p> Elementor Builder </p>
           </div>
           <div data-aos-easing="ease-out" className="Line Line2">
-            <span> ✦ </span> <p> Themes Customization </p>
+            <span> ✦ </span> <p> eCommerce Development </p>
             <span className="extra5"> ✦ </span> <p> SEO ... </p>
           </div>
         </div>

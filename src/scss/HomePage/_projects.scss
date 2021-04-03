@@ -2,6 +2,7 @@
 
 .projectsSection__mainContainer {
   margin: 52rem 0 0rem 0rem;
+  user-select: none;
 }
 
 .projectsSection__headingCont {
@@ -159,10 +160,11 @@
   .bigProjects__desc {
     color: rgb(196, 196, 196);
     margin-top: -1.5rem;
-    font-family: "Poppins", sans-serif;
-    font-size: 17px;
+    font-family: "Roboto", "Poppins", sans-serif;
+    line-height: 1.6;
+    font-size: 17.2px;
     color: $dim-white;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -172,7 +174,8 @@
 
   p {
     span {
-      cursor: pointer;
+      font-family: "Roboto", "Poppins", sans-serif;
+
       margin: 0 0.2rem;
     }
   }
@@ -344,19 +347,18 @@
 }
 
 .smallProjects__desc {
-  font-family: "Poppins", sans-serif;
-  font-size: 15.5px;
+  font-family: "Roboto", "Poppins", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  font-size: 17.2px;
   font-weight: 400;
-  letter-spacing: 0.5px;
 }
 
 .projects__tech,
 .projects__tech a {
-  font-family: "Recursive", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", "Poppins", sans-serif;
+  letter-spacing: 0.4px;
   font-size: 14.2px;
-  letter-spacing: 0.7px;
-  text-shadow: 0.1px 0.3px 10px -1px rgba($color: #000000, $alpha: 0.2);
   transition: color 0.25s;
   margin: 0 0.5rem;
 }
@@ -378,45 +380,4 @@
   width: 125px;
   margin-top: 1.35rem;
   margin-left: 0.45rem;
-}
-
-.Preview__popup {
-  position: absolute;
-  right: 10rem;
-  top: 3rem;
-  width: 6rem;
-  color: $background;
-  height: 2.2rem;
-  text-align: center;
-  background-color: rgba($color: #fff, $alpha: 0.6);
-  font-family: "Poppins" sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.35px;
-  border-bottom-left-radius: 2.2px;
-  border-top-right-radius: 2.2px;
-  border-top-left-radius: 2.2px;
-  display: none;
-  opacity: 0;
-}
-
-.Source__popup {
-  position: absolute;
-  right: -1rem;
-  top: 0.9rem;
-  width: 8.35rem;
-  height: 2.2rem;
-  color: $background;
-  text-align: center;
-  background-color: rgba($color: #fff, $alpha: 0.6);
-  font-family: "Poppins" sans-serif;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.35px;
-  border-top-right-radius: 2.2px;
-  border-top-left-radius: 2.2px;
-  display: none;
-  opacity: 0;
 }

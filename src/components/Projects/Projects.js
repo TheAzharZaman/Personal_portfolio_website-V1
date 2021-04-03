@@ -186,8 +186,10 @@ let ProjectsSection = () => {
 
           <Project
             project_link="http://mashriqtv.pk/"
-            project_heading="Mashriq T.V.."
-            project_description="Mashriq T.V Peshawer is daily news reporting website built on Wordpress. This particular website is extensive application of Wordpress."
+            project_heading="Mashriq T.V."
+            project_description="Mashriq T.V Peshawer is daily news reporting website built on Wordpress. 
+            This particular website is extensive application of Wordpress."
+            tech_1="WordPress"
             tech_link_1="https://wordpress.org/"
             tech_2="Elementor Pro"
             tech_link_2="https://elementor.com/pro/"
