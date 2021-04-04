@@ -66,7 +66,12 @@ const CMSProject = ({
             onClick={popupOpener}
           />
         </a>
-        <a href={project_link} target="_blank" id={source_link_icon_unique_id}>
+        <a
+          href={project_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          id={source_link_icon_unique_id}
+        >
           <FontAwesomeIcon
             className="icons icon2"
             id={external_link_icon_id}
@@ -74,7 +79,11 @@ const CMSProject = ({
           />
         </a>
         {needOfGitHubIcon && (
-          <a href={smallProject__githubLink} target="_blank">
+          <a
+            href={smallProject__githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon
               className="smallProject__githubIcon"
               icon={faGithub}
@@ -85,15 +94,15 @@ const CMSProject = ({
       <h1 className="smallProjects__heading"> {project_heading} </h1>
       <p className="smallProjects__desc"> {project_description} </p>
       <p className="projects__tech">
-        <a href={tech_link_1} target="_blank">
+        <a href={tech_link_1} target="_blank" rel="noopener noreferrer">
           {tech_1}
         </a>
         |
-        <a href={tech_link_2} target="_blank">
+        <a href={tech_link_2} target="_blank" rel="noopener noreferrer">
           {tech_2}
         </a>
         |
-        <a href={tech_link_3} target="_blank">
+        <a href={tech_link_3} target="_blank" rel="noopener noreferrer">
           {tech_3}
         </a>
       </p>

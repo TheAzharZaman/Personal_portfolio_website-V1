@@ -25,14 +25,14 @@ const PendingProject = ({
       <h2 className={taglineSepcificClass}>{tagline}</h2>
       <h3>Track Build Progress</h3>
       <div className="pendingProjects__linksIcons">
-        <a href={githubLink} target="_blank">
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             className="pendingProject__githubIcon"
             icon={faGithub}
           />
         </a>
 
-        <a href={liveLink} target="_blank">
+        <a href={liveLink} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             className="pendingProject__externalIcon"
             icon={faExternalLinkAlt}

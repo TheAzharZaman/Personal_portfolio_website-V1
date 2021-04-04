@@ -57,6 +57,7 @@ function AboutComponent() {
               className="About-btn anim anim-5"
               href="mailto:azharzaman.001@gmail. com"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Get in Touch
             </a>

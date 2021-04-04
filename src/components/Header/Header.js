@@ -70,6 +70,7 @@ function HeaderSection() {
           <a
             href="https://drive.google.com/drive/folders/1cgp8E20b4k92YG5TFFZpp8LjpmrS2470?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Resume
           </a>

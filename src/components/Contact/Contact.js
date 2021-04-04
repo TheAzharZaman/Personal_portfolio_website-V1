@@ -29,6 +29,7 @@ let ContactSection = () => {
           className="contactBtns contactBtn1"
           href="mailto:azharzaman.001@gmail.com"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Gmail
         </a>
@@ -36,6 +37,7 @@ let ContactSection = () => {
           className="contactBtns contactBtn2"
           href="https://api.whatsapp.com/send?phone=923107538437&text=&source=&data=&app_absent="
           target="_blank"
+          rel="noopener noreferrer"
         >
           Whatsapp
         </a>

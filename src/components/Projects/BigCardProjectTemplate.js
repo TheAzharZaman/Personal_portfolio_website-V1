@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt, faImages } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const BigCardProjectTemplate = ({
@@ -49,14 +49,14 @@ const BigCardProjectTemplate = ({
           </h2>
         )}
 
-        <a href={project__githubLink} target="_blank">
+        <a href={project__githubLink} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             className={`gitHub__icon ${gitHubIconSpecialClass}`}
             icon={faGithub}
           />
         </a>
         {needExternalLink && (
-          <a href={projectLink} target="_blank">
+          <a href={projectLink} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </a>
         )}

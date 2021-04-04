@@ -76,6 +76,7 @@ function App() {
                   id="gmail"
                   href="mailto:azharzaman.001@gmail.com"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span>azharzaman.001@gmail.com</span>
                 </a>
